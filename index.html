@@ -2,9 +2,83 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|IM+Fell+DW+Pica|Rokkitt" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="js/jquery-3.3.1.js"></script>
+    <script type="js/scripts.js">
+    </script>
     <title>Music</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <h1>Chord Generator</h1>
 
+      </div>
+      <div class="row form">
+        <form id="theForm" action="index.html" method="post">
+          <div class="col-md-4 input">
+            <h3>Select the key:</h3>
+            <select id="key" class="form-control">
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option>
+              <option>E</option>
+              <option>F</option>
+              <option>G</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 input">
+            <h3>Select Major/Minor:</h3>
+            <select id="major" class="form-control">
+              <option>Major</option>
+              <option>Minor</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 input">
+            <h3>Select the Genre:</h3>
+            <select id="genre" class="form-control">
+              <option>Blues</option>
+              <option>Pop</option>
+              <option>Rock</option>
+            </select>
+          </div>
+
+
+          <button class="btn btn-info" type="submit" name="button">Generate Chords</button>
+        </form>
+
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="blues" class="row">
+        <div class="col-md-4 icon">
+          <h2>The Blues</h2>
+        </div>
+        <div class="col-md-8 info">
+          <h2>The Blues</h2>
+          <p>All the info goes here</p>
+        </div>
+
+      </div>
+      <div id="pop">
+        <div class="container-fluid">
+          <div class="row blues">
+            <h2>Pop</h2>
+          </div>
+        </div>
+      </div>
+      <div id="punk">
+        <div class="container-fluid">
+          <div class="row blues">
+            <h2>Punk</h2>
+          </div>
+        </div>
+      </div>
+      </div>
   </body>
 </html>

@@ -1,0 +1,49 @@
+font-family: 'IM Fell DW Pica', serif;
+font-family: 'Chau Philomene One', sans-serif;
+font-family: 'Rokkitt', serif;
+* {
+  border: solid 1px pink;
+}
+
+.form {
+  height: 500px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+.input {
+  height: 60%;
+}
+
+#blues .icon {
+    background-color: #5118FF;
+    height: 400px;
+}
+
+#pop {
+  height: 400px;
+  background-color: #CD0BFF;
+}
+
+#punk {
+  height: 400px;
+  background-color: #0B51FF;
+}
+
+.info {
+  background: white;
+}
+
+#blues h2 {
+  font-family: 'Chau Philomene One', sans-serif;
+}
+.icon {
+  color: white;
+}
+
+/*.row {
+  background: white;
+  height: 400px;
+}*/
