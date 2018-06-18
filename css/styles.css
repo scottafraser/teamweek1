@@ -1,12 +1,28 @@
-font-family: 'IM Fell DW Pica', serif;
+/*font-family: 'IM Fell DW Pica', serif;
 font-family: 'Chau Philomene One', sans-serif;
-font-family: 'Rokkitt', serif;
-* {
+font-family: 'Rokkitt', serif;*/
+
+/** {
   border: solid 1px pink;
-}
+}*/
 
 body {
-   background: linear-gradient(to right, white, #C5C3E8);
+   background: linear-gradient(to top, #792948, #2f0038);
+
+}
+
+p {
+  font-size: 22px;
+  line-height: 26px;
+  font-family: 'Cardo', serif;
+}
+
+h3 {
+  font-family: 'Cardo', serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
 }
 
 .form {
@@ -27,31 +43,74 @@ body {
 }
 
 .card {
-  background: linear-gradient(to bottom right, #6C5F7F, #895CCC);
-  border-radius: 8px;
-  box-shadow: 5px 5px 28px #6a7582, 10px 10px 178px #6a7582, 15px 15px 98px #6a7582;
-
-}
-
-/*#pop {
-  height: 400px;
-  background-color: #CD0BFF;
-  border-radius: 4px;
-}
-
-#punk {
-background-color: #5118FF;
-  height: 400px;
-  background-color: #0B51FF;
-}*/
-
-#blues h2 {
-  font-family: 'Chau Philomene One', sans-serif;
-}
-.icon {
   color: white;
+  height: 1000px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 178px black;
+
 }
+
+.jazz {
+  background-image: url('../img/jazz.jpg');
+}
+
+.jazz h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 180px;
+}
+
+.blues {
+  background-image: url('../img/blues.jpg');
+}
+
+.blues h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 180px;
+}
+
+.pop {
+  background-image: url('../img/pop.jpg');
+}
+
+.pop h2 {
+  font-family: 'Passion One', cursive;
+  font-size: 190px;
+  letter-spacing: 4px;
+}
+
+.punk {
+  background-image: url('../img/punk.jpg');
+}
+
+.punk h2 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 180px;
+}
+
+.metal {
+  background-image: url('../img/metal.jpg');
+}
+
+.metal h2 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 180px;
+}
+
+.rock {
+  background-image: url('../img/rock.jpg');
+}
+
+.rock h2 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 180px;
+}
+
+
 
 .container-fluid {
   margin: 30px;
+}
+
+#jazz, #blues, #pop, #punk, #metal, #rock {
+  margin-bottom: 100px;
 }
