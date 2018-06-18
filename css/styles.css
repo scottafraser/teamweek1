@@ -5,9 +5,12 @@ font-family: 'Rokkitt', serif;
   border: solid 1px pink;
 }
 
+body {
+   background: linear-gradient(to right, white, #C5C3E8);
+}
+
 .form {
   height: 500px;
-
   display:flex;
   flex-direction:column;
   justify-content:space-around;
@@ -18,23 +21,29 @@ font-family: 'Rokkitt', serif;
 }
 
 #blues .icon {
-    background-color: #5118FF;
+
     height: 400px;
+    border-radius: 4px;
 }
 
-#pop {
+.card {
+  background: linear-gradient(to bottom right, #6C5F7F, #895CCC);
+  border-radius: 8px;
+  box-shadow: 5px 5px 28px #6a7582, 10px 10px 178px #6a7582, 15px 15px 98px #6a7582;
+
+}
+
+/*#pop {
   height: 400px;
   background-color: #CD0BFF;
+  border-radius: 4px;
 }
 
 #punk {
+background-color: #5118FF;
   height: 400px;
   background-color: #0B51FF;
-}
-
-.info {
-  background: white;
-}
+}*/
 
 #blues h2 {
   font-family: 'Chau Philomene One', sans-serif;
@@ -43,7 +52,6 @@ font-family: 'Rokkitt', serif;
   color: white;
 }
 
-/*.row {
-  background: white;
-  height: 400px;
-}*/
+.container-fluid {
+  margin: 30px;
+}
