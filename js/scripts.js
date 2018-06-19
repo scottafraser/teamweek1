@@ -18,17 +18,16 @@ Key.prototype.findMinorScale = function() {
   this.minorScale = stringArray.split(',')
 }
 
-// function numeral() {
-//   forEach(this.majorScaleI, ii, iii, IV, V, vii, viii)
-// }
 
 function jazz(x) {
   var jazzProg = (x[1] + 'min' + "," +  x[4] + 'maj7' + "," + x[0] + 'maj');
-  return jazzProg
+  var jazzArray = jazzProg.split(',')
+  var pictures = makePic(jazzArray)
+  return pictures
 };
 
 function rock(x) {
-  var rockProg = (x[0] + 'maj' + "," +  x[3] + 'maj' + "," + x[4] + 'maj');
+  var rockProg = (x[0] + "," +  x[3] + "," + x[4]);
   return rockProg
 }
 
@@ -43,7 +42,13 @@ function pop(x) {
   return popProg
 }
 
-
+function makePic(x) {
+  var pic = []
+  for (var i = 0; i < x.length; i++) {
+  pic.push('img/' + x[i] +'.png');
+  }
+  return pic;
+}
 
 $(document).ready(function(){
 
@@ -76,18 +81,12 @@ $(document).ready(function(){
   $("#chordButton").click(function() {
     event.preventDefault();
 
-
-      // var genre = $('#genre').find(":selected").val();
       var key = $('#key').find(":selected").val();
       var scale = $('#major').find(":selected").val();
 
-    console.log(genre);
-      console.log(key);
-        console.log(scale);
-
     if (key === 'keyC' && scale === 'majorScale') {
-      $('#showChords').append(jazz(keyC.majorScale) + '<br>')
-      $('#showChords').append(rock(keyC.majorScale) + '<br>')
+      $('#jazzChords').append(jazz(keyC.majorScale) + '<br>')
+      $('#rockChords').append(rock(keyC.majorScale) + '<br>')
       $('#showChords').append(blues(keyC.majorScale)+ '<br>')
       $('#showChords').append(pop(keyC.majorScale)+ '<br>')
     } else if (key === 'keyDb' && scale === 'majorScale') {
@@ -126,7 +125,6 @@ $(document).ready(function(){
       $('#showChords').append(blues(keyG.majorScale))
       $('#showChords').append(pop(keyG.majorScale))
     }
-
 
 
   });
