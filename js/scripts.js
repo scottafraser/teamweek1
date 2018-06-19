@@ -31,9 +31,21 @@ function rock(x) {
   return rockProg
 }
 
+function folk(x) {
+  var folkProg = (x[0] + 'maj' + "," +  x[4] + 'maj' + "," + x[3] + 'min');
+  return folkProg
+}
+}
 
 
 $(document).ready(function(){
+  $("#chordButton").click(function() {
+    event.preventDefault();
+
+    $('#showChords')
+
+
+
 
 var keyC = new Key (["C","D","E","F","G","A","B"])
 keyC.findMinorScale();
