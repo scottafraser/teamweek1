@@ -2,64 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="img/guitar.png" type="image/png"  sizes="24x24">
     <link href="https://fonts.googleapis.com/css?family=Cardo|Caveat:700|Chau+Philomene+One|IM+Fell+DW+Pica|Passion+One|Rokkitt" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <title>Music</title>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <h1>Chord Generator</h1>
-
-      </div>
       <div class="row form container-fluid">
-        <form id="theForm" action="index.html" method="post">
-          <div class="col-md-4 input">
-            <h3>Select the key:</h3>
-            <select id="key" class="form-control">
-              <option value="keyC">C</option>
-            <option value="keyDb">Db</option>
-            <option value="keyD">D</option>
-            <option value="keyEb">Eb</option>
-            <option value="keyE">E</option>
-            <option value="keyF">F</option>
-            <option value="keyFsharp">F#</option>
-            <option value="keyG">G</option>
-            <option value="keyA">A</option>
-            <option value="keyAb">Ab</option>
-            <option value="keyBb">Bb</option>
-            <option value="keyB">B</option>
-            </select>
-          </div>
-
-          <div class="col-md-4 input">
-            <h3>Select Major/Minor:</h3>
-            <select id="major" class="form-control">
-              <option value="majorScale">Major</option>
-              <option>Minor</option>
-            </select>
-          </div>
-
-          <div class="col-md-4 input">
+        <!-- <h1>Chord Generator</h1>
+          <form id="theForm" action="index.html" method="post">
+            <div class="col-md-4 formbutton">
+              <h3>Select the key:</h3>
+              <select id="key" class="form-control">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+                <option>G</option>
+              </select>
+              <h3>Select Major/Minor:</h3>
+              <select id="major" class="form-control">
+                <option>Major</option>
+                <option>Minor</option>
+              </select>
+            </div>
+          <div class="col-md-4 formbutton">
             <h3>Select the Genre:</h3>
             <select id="genre" class="form-control">
-              <option value="jazz">Jazz</option>
-              <option value="blues">Blues</option>
-              <option value="pop">Pop</option>
-              <option value="punk">Punk</option>
-              <option value="rock">Metal</option>
-              <option value="rock">Rock</option>
+              <option>Blues</option>
+              <option>Pop</option>
+              <option>Rock</option>
             </select>
           </div>
-          <button id="chordButton" class="btn btn-primary" type="submit" name="button">Generate Chords</button>
-        </form>
-      </div>
-      <div class="row">
-        <h1 id="showChords">chords</h1>
-      </div>
+            <div class="col-md-4 formbutton">
+              <button id="chordButton" class="btn btn-default btn-lg" type="submit" name="button">Generate Chords</button>
+            </div>
+          </div>
+        </form> -->
+        <h1 id='head'>Step into the world of music...</h1>
+        <div id='genres'>
+          <div class="row">
+            <div class="col-sm-2 menu">JAZZ</div>
+            <div class="col-sm-2 menu">BLUES</div>
+            <div class="col-sm-2 menu">POP</div>
+            <div class="col-sm-2 menu">PUNK</div>
+            <div class="col-sm-2 menu">METAL</div>
+            <div class="col-sm-2 menu">ROCK</div>
+          </div>
+        </div>
+
+      <!-- <div class="row">
+        <h1 id="showChords">Chords</h1>
+      </div> -->
     </div>
     <div class="container-fluid">
       <div id="jazz">
