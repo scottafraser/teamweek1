@@ -3,7 +3,7 @@ function Key (majorScale, minorScale) {
   this.minorScale = minorScale;
 }
 
-function Chords (majorChords,minorchords){
+function Chords (majorChords,minorchords) {
   this.majorChords = ['I','ii','iii','IV','V','vii','viii']
   this.minorChords = []
 }
@@ -18,13 +18,14 @@ Key.prototype.findMinorScale = function() {
   this.minorScale = stringArray.split(',')
 }
 
-function numeral {
-  forEach(this.majorScaleI, ii, iii, IV, V, vii, viii
-}
+// function numeral() {
+//   forEach(this.majorScaleI, ii, iii, IV, V, vii, viii)
+// }
+
 function jazz(x) {
   var jazzProg = (x[1] + 'min' + "," +  x[4] + 'maj7' + "," + x[0] + 'maj');
   return jazzProg
-}
+};
 
 function rock(x) {
   var rockProg = (x[0] + 'maj' + "," +  x[3] + 'maj' + "," + x[4] + 'maj');
@@ -35,7 +36,6 @@ function folk(x) {
   var folkProg = (x[0] + 'maj' + "," +  x[4] + 'maj' + "," + x[3] + 'min');
   return folkProg
 }
-}
 
 
 $(document).ready(function(){
@@ -43,7 +43,6 @@ $(document).ready(function(){
     event.preventDefault();
 
     $('#showChords')
-
 
 
 
@@ -72,4 +71,5 @@ keyBb.findMinorScale();
 var keyB = new Key (["B","C#","D#","E","F#","G#","A#"])
 keyB.findMinorScale();
 
+});
 });
