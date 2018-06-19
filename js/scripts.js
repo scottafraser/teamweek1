@@ -8,8 +8,6 @@ function Chords (majorChords,minorchords) {
   this.minorChords = []
 }
 
-
-
 Key.prototype.findMinorScale = function() {
   var minorArray = []
   var minorSplice = this.majorScale.slice(5,7)
@@ -28,11 +26,15 @@ function jazz(x) {
 
 function rock(x) {
   var rockProg = (x[0] + "," +  x[3] + "," + x[4]);
-  return rockProg
+  var rockArray = rockProg.split(',')
+  var pictures = makePic(rockArray)
+  console.log(pictures);
+  return pictures
+
 }
 
 function blues(x) {
-  var bluesProg = (x[0] + 'maj7' + "," +  x[3] + 'maj7' + "," + x[4] + 'maj7');
+  var bluesProg = (x[0] + 'maj7' + ", " +  x[3] + 'maj7' + ", " + x[4] + 'maj7');
   return bluesProg
 
 }
@@ -45,10 +47,19 @@ function pop(x) {
 function makePic(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
-  pic.push('img/' + x[i] +'.png');
+  pic.push('<img src="img/' + x[i] +'.png">');
   }
-  return pic;
+  var stringPic = pic.toString();
+  var splitPic = stringPic.split(',')
+  return splitPic;
 }
+
+function shiftPic(x){
+  var chord = x.shift()
+  return chord
+}
+
+
 
 $(document).ready(function(){
 
@@ -83,10 +94,20 @@ $(document).ready(function(){
 
       var key = $('#key').find(":selected").val();
       var scale = $('#major').find(":selected").val();
+      console.log(rock(keyC.majorScale));
+      var progression = rock(keyC.majorScale);
+      console.log(progression);
+      var chord1 = shiftPic(progression)
+      var chord2 = shiftPic(progression)
+      var chord3 = shiftPic(progression)
+      console.log(chord1 + chord2 + chord3);
+
+
 
     if (key === 'keyC' && scale === 'majorScale') {
       $('#jazzChords').append(jazz(keyC.majorScale) + '<br>')
-      $('#rockChords').append(rock(keyC.majorScale) + '<br>')
+      $('#rockChords').html(chord1 + chord2 + chord3)
+      // $('#rockChords').append(rock(keyC.majorScale) + '<br>')
       $('#showChords').append(blues(keyC.majorScale)+ '<br>')
       $('#showChords').append(pop(keyC.majorScale)+ '<br>')
     } else if (key === 'keyDb' && scale === 'majorScale') {
