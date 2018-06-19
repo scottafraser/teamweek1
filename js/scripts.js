@@ -3,6 +3,13 @@ function Key (majorScale, minorScale) {
   this.minorScale = minorScale;
 }
 
+function Chords (majorChords,minorchords){
+  this.majorChords = ['I','ii','iii','IV','V','vii','viii']
+  this.minorChords = []
+}
+
+
+
 Key.prototype.findMinorScale = function() {
   var minorArray = []
   var minorSplice = this.majorScale.slice(5,7)
@@ -11,18 +18,9 @@ Key.prototype.findMinorScale = function() {
   this.minorScale = stringArray.split(',')
 }
 
-
-// Key.prototype.majorPopChords = function() {
-//   this.major =  this.majorScale.slice(0,1) + "," + this.majorScale.slice(3,4) + "," + this.majorScale.slice(4,5);
-//   return this.major
-// }
-//
-// Key.prototype.minorChords = function() {
-//   this.minorScale =  this.majorScale.slice(5,6) + "," + this.majorScale.slice(3,4) + "," + this.majorScale.slice(2,3);
-//   return this.minorScale
-// }
-
-
+function numeral {
+  forEach(this.majorScaleI, ii, iii, IV, V, vii, viii
+}
 function jazz(x) {
   var jazzProg = (x[1] + 'min' + "," +  x[4] + 'maj7' + "," + x[0] + 'maj');
   return jazzProg
