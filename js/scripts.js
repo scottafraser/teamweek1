@@ -25,23 +25,27 @@ function jazz(x) {
 };
 
 function rock(x) {
-  var rockProg = (x[0] + "," +  x[3] + "," + x[4]);
-  var rockArray = rockProg.split(',')
-  var pictures = makePic(rockArray)
-  console.log(pictures);
+  var progression = (x[0] + "," +  x[3] + "," + x[4]);
+  var array = progression.split(',')
+  var pictures = makePic(array)
   return pictures
 
 }
 
 function blues(x) {
-  var bluesProg = (x[0] + 'maj7' + ", " +  x[3] + 'maj7' + ", " + x[4] + 'maj7');
-  return bluesProg
+  var progression = (x[0] + 'maj7' + ", " +  x[3] + 'maj7' + ", " + x[4] + 'maj7');
+  var array = progression.split(',')
+  var pictures = makePic(array)
+  return pictures
 
 }
 
 function pop(x) {
-  var popProg = (x[0] + 'maj' + "," +  x[2] + 'min' + "," + x[3] + 'maj' + "," + x[4] + 'maj');
-  return popProg
+  var progression = (x[0] + 'maj' + "," +  x[2] + 'min' + "," + x[3] + 'maj' + "," + x[4] + 'maj');
+  var array = progression.split(',')
+  console.log(array);
+  var pictures = makePic(array)
+  return pictures
 }
 
 function makePic(x) {
@@ -94,57 +98,55 @@ $(document).ready(function(){
 
       var key = $('#key').find(":selected").val();
       var scale = $('#major').find(":selected").val();
-      console.log(rock(keyC.majorScale));
-      var progression = rock(keyC.majorScale);
-      console.log(progression);
-      var chord1 = shiftPic(progression)
-      var chord2 = shiftPic(progression)
-      var chord3 = shiftPic(progression)
-      console.log(chord1 + chord2 + chord3);
 
+      // var progression = rock(keyC.majorScale);
+      //
+      // var chord1 = shiftPic(progression)
+      // var chord2 = shiftPic(progression)
+      // var chord3 = shiftPic(progression)
+      //
 
 
     if (key === 'keyC' && scale === 'majorScale') {
-      $('#jazzChords').append(jazz(keyC.majorScale) + '<br>')
-      $('#rockChords').html(chord1 + chord2 + chord3)
-      // $('#rockChords').append(rock(keyC.majorScale) + '<br>')
-      $('#showChords').append(blues(keyC.majorScale)+ '<br>')
-      $('#showChords').append(pop(keyC.majorScale)+ '<br>')
+      $('#jazzChords').html(jazz(keyC.majorScale) + '<br>')
+      $('#rockChords').html(rock(keyC.majorScale))
+      $('#showChords').html(blues(keyC.majorScale)+ '<br>')
+      $('#showChords').html(pop(keyC.majorScale)+ '<br>')
     } else if (key === 'keyDb' && scale === 'majorScale') {
-      $('#showChords').append(jazz(keyDb.majorScale))
-      $('#showChords').append(rock(keyDb.majorScale))
-      $('#showChords').append(blues(keyDb.majorScale))
-      $('#showChords').append(pop(keyDb.majorScale))
+      $('#showChords').html(jazz(keyDb.majorScale))
+      $('#showChords').html(rock(keyDb.majorScale))
+      $('#showChords').html(blues(keyDb.majorScale))
+      $('#showChords').html(pop(keyDb.majorScale))
     } else if (key === 'keyD' && scale === 'majorScale') {
-      $('#showChords').append(jazz(keyD.majorScale))
-      $('#showChords').append(rock(keyD.majorScale))
-      $('#showChords').append(blues(keyD.majorScale))
-      $('#showChords').append(pop(keyD.majorScale))
+      $('#showChords').html(jazz(keyD.majorScale))
+      $('#showChords').html(rock(keyD.majorScale))
+      $('#showChords').html(blues(keyD.majorScale))
+      $('#showChords').html(pop(keyD.majorScale))
     } else if (key === 'Eb' && scale === 'majorScale') {
-      $('#showChords').append(jazz(Eb.majorScale))
-      $('#showChords').append(rock(Eb.majorScale))
-      $('#showChords').append(blues(Eb.majorScale))
-      $('#showChords').append(pop(Eb.majorScale))
+      $('#showChords').html(jazz(Eb.majorScale))
+      $('#showChords').html(rock(Eb.majorScale))
+      $('#showChords').html(blues(Eb.majorScale))
+      $('#showChords').html(pop(Eb.majorScale))
     } else if (key === 'keyE' && scale === 'majorScale') {
-      $('#showChords').append(jazz(keyE.majorScale))
-      $('#showChords').append(rock(keyE.majorScale))
-      $('#showChords').append(blues(keyE.majorScale))
-      $('#showChords').append(pop(keyE.majorScale))
+      $('#showChords').html(jazz(keyE.majorScale))
+      $('#showChords').html(rock(keyE.majorScale))
+      $('#showChords').html(blues(keyE.majorScale))
+      $('#showChords').html(pop(keyE.majorScale))
     } else if (key === 'keyF' && scale === 'majorScale') {
-      $('#showChords').append(jazz(keyF.majorScale))
-      $('#showChords').append(rock(keyF.majorScale))
-      $('#showChords').append(blues(keyF.majorScale))
-      $('#showChords').append(pop(keyF.majorScale))
+      $('#showChords').html(jazz(keyF.majorScale))
+      $('#showChords').html(rock(keyF.majorScale))
+      $('#showChords').html(blues(keyF.majorScale))
+      $('#showChords').html(pop(keyF.majorScale))
     } else if (key === 'keyFsharp' && scale === 'majorScale') {
-      $('#showChords').append(jazz(keyFsharp.majorScale))
-      $('#showChords').append(rock(keyFsharp.majorScale))
-      $('#showChords').append(blues(keyFsharp.majorScale))
-      $('#showChords').append(pop(keyFsharp.majorScale))
+      $('#showChords').html(jazz(keyFsharp.majorScale))
+      $('#showChords').html(rock(keyFsharp.majorScale))
+      $('#showChords').html(blues(keyFsharp.majorScale))
+      $('#showChords').html(pop(keyFsharp.majorScale))
     } else if (key === 'keyG' && scale === 'majorScale') {
-      $('#showChords').append(jazz(keyG.majorScale))
-      $('#showChords').append(rock(keyG.majorScale))
-      $('#showChords').append(blues(keyG.majorScale))
-      $('#showChords').append(pop(keyG.majorScale))
+      $('#showChords').html(jazz(keyG.majorScale))
+      $('#showChords').html(rock(keyG.majorScale))
+      $('#showChords').html(blues(keyG.majorScale))
+      $('#showChords').html(pop(keyG.majorScale))
     }
 
 
