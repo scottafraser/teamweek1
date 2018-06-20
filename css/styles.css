@@ -8,7 +8,7 @@ font-family: 'Rokkitt', serif;*/
 
 body {
    /*background: linear-gradient(to top, #593662, #6A6A8F);*/
-   background: #463b59;
+   background: linear-gradient(to top, #463b59, #373338);
 }
 
 p {
@@ -31,6 +31,7 @@ h3 {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: -50px;
 }
 
 /*Makes form area smaller, but does not account for form titles*/
@@ -39,7 +40,7 @@ h3 {
 }
 
 .btn-md {
-  margin-top: 56px;
+  margin-top: 54px;
 }
 
 .col-md-4 {
@@ -51,19 +52,26 @@ h3 {
   margin-top: 20px;
 }
 
+.formbutton {
+  display: flex;
+  flex-direction: column;
+}
+
 .form {
   height: auto;
   display: flex;
   width: auto;
   flex-direction: column;
   justify-content: space-around;
-  width: 70%;
+  width: 50%;
   color: white;
-  box-shadow: 15px 15px 70px rgba(10, 10, 10, .5);
+  box-shadow: 15px 15px 70px rgba(10, 10, 10, .35);
   padding-bottom: 20px;
-  text-align: center;
-  background-color: #320038;
+  background-color: #463b59;
   border-radius: 8px;
+}
+.form h1 {
+  text-align: center;
 }
 
 .left {
@@ -175,7 +183,7 @@ h3 {
   width: 25%;
 }
 #genres {
-  height: 55px;
+  height: 75px;
   width: auto;
 }
 
@@ -190,19 +198,27 @@ h4 {
   font-size: 20px;
   transition: .5s;
   border-bottom-style: none;
-  padding-bottom: 3px;
+  padding: 7px;
+  margin-top: 20px;
+  border-bottom-width: 0px;
+  border-radius: 8px;
 }
 
 h4:hover {
   color: rgba(255, 255, 255, 1);
   transition: .75s;
   cursor: pointer;
-  padding-bottom: 7px;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, .025);
+  border-radius: 8px;
 }
 .selected {
     color: rgba(255, 255, 255, 1);
     border-bottom-style: outset;
+    border-bottom-width: 3px;
     padding-bottom: 7px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .05);
 }
 /*#head {
   margin-bottom: 100px;
