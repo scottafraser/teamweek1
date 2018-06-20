@@ -101,6 +101,7 @@ function makeAudio(x) {
 
 function hideAll() {
   $("#home").hide()
+  $("#metal").hide()
   $("#jazz").hide()
   $("#blues").hide()
   $("#pop").hide()
@@ -108,7 +109,7 @@ function hideAll() {
   $("#rock").hide()
 }
 function removeSelectedClass() {
-  $("#homeBtn").removeClass("selected")
+  $("#metalBtn").removeClass("selected")
   $("#jazzBtn").removeClass("selected")
   $("#bluesBtn").removeClass("selected")
   $("#popBtn").removeClass("selected")
@@ -205,12 +206,12 @@ $(document).ready(function(){
 
   // nav function
 
-  $("#homeBtn").click(function(event) {
+  $("#metalBtn").click(function(event) {
     event.preventDefault();
     removeSelectedClass();
-    $("#homeBtn").addClass("selected");
+    $("#metalBtn").addClass("selected");
     hideAll();
-    $("#home").show();
+    $("#metal").show();
   });
   $("#jazzBtn").click(function(event) {
     event.preventDefault();
