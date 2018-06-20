@@ -163,6 +163,7 @@ h3 {
 
 #jazz, #blues, #pop, #punk, #metal, #rock {
   margin-bottom: 100px;
+  display: none;
 }
 .col-md-8 {
   padding: 20px;
@@ -174,10 +175,6 @@ h3 {
 #genres {
   height: 55px;
   width: auto;
-}
-
-#mainInfo {
-  margin-top: -39px;
 }
 
 
