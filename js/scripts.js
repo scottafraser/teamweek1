@@ -32,7 +32,7 @@ function rock(x) {
 }
 
 function blues(x) {
-  var progression = (x[0] + '7' + ", " +  x[3] + '7' + ", " + x[4] + '7');
+  var progression = (x[0] + '7' + "," +  x[3] + '7' + "," + x[4] + '7');
   var array = progression.split(',')
   console.log(array);
   var pictures = makePic(array)
@@ -50,19 +50,13 @@ function pop(x) {
 }
 
 // picture functions
-function isLower(character) {
-  if (character.toLowerCase() === true)
-  }
+
 
 function makePic(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
-    if (isLower(x) === true){
-      pic.push('<img src="img/chords/' + x[i] +'min.svg">');
-    } else {
-      pic.push('<img src="img/chords/' + x[i] +'.svg">');
+    pic.push('<img src="img/chords/' + x[i] +'.svg">');
     }
-  }
   var stringPic = pic.toString();
   var splitPic = stringPic.split(',')
   return splitPic;
@@ -90,29 +84,29 @@ function buildMinorChords(key){
 // front end
 $(document).ready(function(){
 
-    var keyC = new Key (["C","d","e","F","G","a","b"])
+    var keyC = new Key (["C","dmin","emin","F","G","amin","bmin"])
     keyC.findMinorScale();
-    var keyDb = new Key (["Db","eb","f","Gb","Ab","bb","c"])
+    var keyDb = new Key (["Db","ebmin","fmin","Gb","Ab","bb","cmin"])
     keyDb.findMinorScale();
-    var keyD = new Key (["D","e","f#","G","A","b","#"])
+    var keyD = new Key (["D","emin","f#","G","A","bmin","c#min"])
     keyD.findMinorScale();
-    var keyEb = new Key (["Eb","f","g","Ab","Bb","c","d"])
+    var keyEb = new Key (["Eb","fmin","gmin","Ab","Bb","cmin","dmin"])
     keyEb.findMinorScale();
-    var keyE = new Key (["E","f#","g#","A","B","c#","d#"])
+    var keyE = new Key (["E","f#min","g#min","A","B","c#min","d#min"])
     keyE.findMinorScale();
-    var keyF = new Key (["F","g","a","Bb","C","d","e"])
+    var keyF = new Key (["F","gmin","amin","Bb","C","dmin","emin"])
     keyF.findMinorScale();
-    var keyFsharp = new Key (["F#","g#","a#","B","C#","d#","f"])
+    var keyFsharp = new Key (["F#","g#min","a#min","B","C#","d#min","fmin"])
     keyFsharp.findMinorScale();
-    var keyG = new Key (["G","a","b","C","D","e","f#"])
+    var keyG = new Key (["G","amin","bmin","C","D","emin","f#min"])
     keyG.findMinorScale();;
-    var keyAb = new Key (["Ab","bb","c","Db","Eb","f","g"])
+    var keyAb = new Key (["Ab","bbmin","cmin","Db","Eb","fmin","gmin"])
     keyAb.findMinorScale();
-    var keyA = new Key (["A","b","c#","D","E","f#","g#"])
+    var keyA = new Key (["A","bmin","c#min","D","E","f#min","g#min"])
     keyA.findMinorScale();
-    var keyBb = new Key (["Bb","c","d","Eb","F","g","a"])
+    var keyBb = new Key (["Bb","cmin","dmin","Eb","F","gmin","amin"])
     keyBb.findMinorScale();
-    var keyB = new Key (["B","c#","d#","E","F#","g#","a#"])
+    var keyB = new Key (["B","c#min","d#min","E","F#","g#min","a#min"])
     keyB.findMinorScale();
 
 
