@@ -1,4 +1,4 @@
-# Pizza Party!
+# Guitar Chord Progression Generator
 
 #### Epicodus Intro to Programming:
 ##### Group Project
@@ -10,9 +10,10 @@
 This site is a tool to create examples and facilitate ideas for simple chord progressions
 
 | Behavior	| INPUT	| OUTPUT |
-| ----------| ----- | -------|
+| :----------:| :-----: | :-------:|
 |Allow user to choose a key | click 'C'| C |   
 |Allow user to pick a scale | click 'major' | major |
+|Allow user to pick a genre | click 'jazz' | *shows jazz section* |
 
 ## Setup/Contribution Requirements
 
