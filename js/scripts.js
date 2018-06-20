@@ -131,37 +131,37 @@ $(document).ready(function(){
       buildMajorChords(keyG)
     } else if (key === 'keyAb' && scale === 'Major') {
       buildMajorChords(keyAb)
-    } else if (key === 'keyG' && scale === 'Major') {
+    } else if (key === 'keyA' && scale === 'Major') {
       buildMajorChords(keyA)
     } else if (key === 'keyBb' && scale === 'Major') {
       buildMajorChords(keyBb)
-    } else if (key === 'keyBb' && scale === 'Major') {
+    } else if (key === 'keyB' && scale === 'Major') {
       buildMajorChords(keyB)
       // minor
     } if (key === 'keyC' && scale === 'Minor') {
       buildMinorChords(keyEb)
     } else if (key === 'keyDb' && scale === 'Minor') {
-      buildMinorChords(keyDb)
-    } else if (key === 'keyD' && scale === 'Minor') {
-      buildMinorChords(keyD)
-    } else if (key === 'Eb' && scale === 'Minor') {
-      buildMinorChords(keyEb)
-    } else if (key === 'keyE' && scale === 'Minor') {
       buildMinorChords(keyE)
-    } else if (key === 'keyF' && scale === 'Minor') {
+    } else if (key === 'keyD' && scale === 'Minor') {
       buildMinorChords(keyF)
-    } else if (key === 'keyFsharp' && scale === 'Minor') {
+    } else if (key === 'Eb' && scale === 'Minor') {
       buildMinorChords(keyFsharp)
-    } else if (key === 'keyG' && scale === 'Minor') {
+    } else if (key === 'keyE' && scale === 'Minor') {
       buildMinorChords(keyG)
-    } else if (key === 'keyAb' && scale === 'Minor') {
+    } else if (key === 'keyF' && scale === 'Minor') {
       buildMinorChords(keyAb)
-    } else if (key === 'keyG' && scale === 'Minor') {
+    } else if (key === 'keyFsharp' && scale === 'Minor') {
       buildMinorChords(keyA)
-    } else if (key === 'keyBb' && scale === 'Minor') {
+    } else if (key === 'keyG' && scale === 'Minor') {
       buildMinorChords(keyBb)
-    } else if (key === 'keyBb' && scale === 'Minor') {
+    } else if (key === 'keyAb' && scale === 'Minor') {
       buildMinorChords(keyB)
+    } else if (key === 'keyA' && scale === 'Minor') {
+      buildMinorChords(keyC)
+    } else if (key === 'keyBb' && scale === 'Minor') {
+      buildMinorChords(keyDb)
+    } else if (key === 'keyB' && scale === 'Minor') {
+      buildMinorChords(keyD)
     }
 
 
