@@ -20,7 +20,7 @@ function jazz(x) {
   console.log(array);
   var pictures = makePic(array)
   return pictures
-};
+}
 
 function rock(x) {
   var progression = (x[0] + "," +  x[3] + "," + x[4]);
@@ -37,7 +37,6 @@ function blues(x) {
   console.log(array);
   var pictures = makePic(array)
   return pictures
-
 }
 
 function pop(x) {
@@ -51,8 +50,10 @@ function pop(x) {
 
 // picture functions
 function isLower(character) {
-  if (character.toLowerCase() === true)
+  if (character.toLowerCase() === true) {
+
   }
+}
 
 function makePic(x) {
   var pic = []
@@ -86,6 +87,22 @@ function buildMinorChords(key){
   $('#bluesChords').html(blues(key.minorScale))
   $('#popChords').html(pop(key.minorScale))
 }
+function hideAll() {
+  $("#home").hide()
+  $("#jazz").hide()
+  $("#blues").hide()
+  $("#pop").hide()
+  $("#punk").hide()
+  $("#rock").hide()
+}
+function removeSelectedClass() {
+  $("#homeBtn").removeClass("selected")
+  $("#jazzBtn").removeClass("selected")
+  $("#bluesBtn").removeClass("selected")
+  $("#popBtn").removeClass("selected")
+  $("#punkBtn").removeClass("selected")
+  $("#rockBtn").removeClass("selected")
+}
 
 // front end
 $(document).ready(function(){
@@ -116,7 +133,7 @@ $(document).ready(function(){
     keyB.findMinorScale();
 
 
-  $("#chordButton").click(function() {
+  $("#chordButton").click(function(event) {
     event.preventDefault();
 
     var key = $('#key').find(":selected").val();
@@ -172,7 +189,50 @@ $(document).ready(function(){
     } else if (key === 'keyB' && scale === 'Minor') {
       buildMinorChords(keyD)
     }
+  });
 
+  // nav function
 
+  $("#homeBtn").click(function(event) {
+    event.preventDefault();
+    removeSelectedClass();
+    $("#homeBtn").addClass("selected");
+    hideAll();
+    $("#home").show();
+  });
+  $("#jazzBtn").click(function(event) {
+    event.preventDefault();
+    removeSelectedClass();
+    $("#jazzBtn").addClass("selected");
+    hideAll();
+    $("#jazz").show();
+  });
+  $("#bluesBtn").click(function(event) {
+    event.preventDefault();
+    removeSelectedClass();
+    $("#bluesBtn").addClass("selected");
+    hideAll();
+    $("#blues").show();
+  });
+  $("#popBtn").click(function(event) {
+    event.preventDefault();
+    removeSelectedClass();
+    $("#popBtn").addClass("selected");
+    hideAll();
+    $("#pop").show();
+  });
+  $("#punkBtn").click(function(event) {
+    event.preventDefault();
+    removeSelectedClass();
+    $("#punkBtn").addClass("selected");
+    hideAll();
+    $("#punk").show();
+  });
+  $("#rockBtn").click(function(event) {
+    event.preventDefault();
+    removeSelectedClass();
+    $("#rockBtn").addClass("selected");
+    hideAll();
+    $("#rock").show();
   });
 });

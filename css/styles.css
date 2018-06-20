@@ -59,9 +59,11 @@ h3 {
   justify-content: space-around;
   width: 70%;
   color: white;
-  border: solid white 2px;
+  box-shadow: 15px 15px 70px rgba(10, 10, 10, .5);
   padding-bottom: 20px;
   text-align: center;
+  background-color: #320038;
+  border-radius: 8px;
 }
 
 .left {
@@ -163,6 +165,7 @@ h3 {
 
 #jazz, #blues, #pop, #punk, #metal, #rock {
   margin-bottom: 100px;
+  display: none;
 }
 .col-md-8 {
   padding: 20px;
@@ -176,27 +179,30 @@ h3 {
   width: auto;
 }
 
-#mainInfo {
-  margin-top: -39px;
-}
 
-
-.menu {
+h4 {
   display: flex;
   list-style: none;
   justify-content: space-around;
   font-family: sans-serif;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
   letter-spacing: 3px;
-  font-weight: bolder;
-  font-size: 28px;
+  font-size: 20px;
   transition: .5s;
+  border-bottom-style: none;
+  padding-bottom: 3px;
 }
 
-.menu:hover {
+h4:hover {
   color: rgba(255, 255, 255, 1);
-  transition: .5s;
+  transition: .75s;
   cursor: pointer;
+  padding-bottom: 7px;
+}
+.selected {
+    color: rgba(255, 255, 255, 1);
+    border-bottom-style: outset;
+    padding-bottom: 7px;
 }
 /*#head {
   margin-bottom: 100px;
