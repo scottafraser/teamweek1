@@ -13,51 +13,44 @@ Key.prototype.findMinorScale = function() {
 
 
 // genre functions
+function makeChordChartsandAudio(x){
+  var array = x.split(',')
+  var pictures = makePic(array)
+  var sounds = makeAudio(array)
+  var picturesAndSounds = pictures + sounds
+  return picturesAndSounds
+}
+
 
 function jazz(x) {
   var progression= (x[1] + "," +  x[4] + '7' + "," + x[0]);
-  var array = progression.split(',')
-  console.log(array);
-  var pictures = makePic(array)
-  return pictures
+  var soundAndVison = makeChordChartsandAudio(progression)
+  return soundAndVison
 }
 
 function rock(x) {
   var progression = (x[0] + "," +  x[3] + "," + x[4]);
-  var array = progression.split(',')
-  console.log(array);
-  var pictures = makePic(array)
-  var sounds = makeAudio(array)
-  console.log(sounds);
-  var picturesAndSounds = pictures + sounds
-  return picturesAndSounds
+  var soundAndVison = makeChordChartsandAudio(progression)
+  return soundAndVison
 
 }
 
 function blues(x) {
   var progression = (x[0] + '7' + "," +  x[3] + '7' + "," + x[4] + '7');
-  var array = progression.split(',')
-  console.log(array);
-  var pictures = makePic(array)
-  return pictures
+  var soundAndVison = makeChordChartsandAudio(progression)
+  return soundAndVison
 }
 
 function pop(x) {
   var progression = (x[0] + "," +  x[2] + "," + x[3] + "," + x[4]);
-  var array = progression.split(',')
-  console.log(array);
-  var pictures = makePic(array)
-  console.log(pictures);
-  return pictures
+  var soundAndVison = makeChordChartsandAudio(progression)
+  return soundAndVison
 }
 
 function metal(x) {
   var progression = (x[0] + "," +  x[5] + "," + x[2] + "," + x[6]);
-  var array = progression.split(',')
-  console.log(array);
-  var pictures = makePic(array)
-  console.log(pictures);
-  return pictures
+  var soundAndVison = makeChordChartsandAudio(progression)
+  return soundAndVison
 }
 
 // picture functions
@@ -95,21 +88,17 @@ function buildMinorChords(key){
 
 //audio funtions
 
-// +
-// '<div id="audio" class="audio">' +
-// '<source src="audio/C-major.mp3" type="audio/mp3">' +
-// '</div>'
-//
-
 function makeAudio(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
-    pic.push('<div>' + '<audio controls>' + '<source src="newAudio/' + x[i] + '.mp3" type="audio/mp3">' + '</audio>' + '</div>');
+    pic.push('<audio controls>' + '<source src="newAudio/' + x[i] + '.mp3" type="audio/mp3">' + '</audio>');
     }
   var stringPic = pic.toString();
   var splitPic = stringPic.split(',')
+  console.log(splitPic);
   return splitPic;
 }
+
 function hideAll() {
   $("#home").hide()
   $("#jazz").hide()
