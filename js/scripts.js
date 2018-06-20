@@ -27,7 +27,10 @@ function rock(x) {
   var array = progression.split(',')
   console.log(array);
   var pictures = makePic(array)
-  return pictures
+  var sounds = makeAudio(array)
+  console.log(sounds);
+  var picturesAndSounds = pictures + sounds
+  return picturesAndSounds
 
 }
 
@@ -59,11 +62,12 @@ function metal(x) {
 }
 
 // picture functions
+
 function makePic(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
     pic.push('<img src="img/chords/' + x[i] +'.svg">');
-    }
+  }
   var stringPic = pic.toString();
   var splitPic = stringPic.split(',')
   return splitPic;
@@ -92,15 +96,22 @@ function buildMinorChords(key){
 
 //audio funtions
 
+// +
+// '<div id="audio" class="audio">' +
+// '<source src="audio/C-major.mp3" type="audio/mp3">' +
+// '</div>'
+//
+
 function makeAudio(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
-    pic.push('<img src="img/chords/' + x[i] +'.svg">');
+    pic.push('<div>' + '<audio controls>' + '<source src="audio/' + x[i] + '.mp3" type="audio/mp3">' + '</audio>' + '</div>');
     }
   var stringPic = pic.toString();
   var splitPic = stringPic.split(',')
   return splitPic;
 }
+
 // front end
 $(document).ready(function(){
 
