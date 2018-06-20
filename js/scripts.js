@@ -105,7 +105,7 @@ function buildMinorChords(key){
 function makeAudio(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
-    pic.push('<div>' + '<audio controls>' + '<source src="audio/' + x[i] + '.mp3" type="audio/mp3">' + '</audio>' + '</div>');
+    pic.push('<div>' + '<audio controls>' + '<source src="newAudio/' + x[i] + '.mp3" type="audio/mp3">' + '</audio>' + '</div>');
     }
   var stringPic = pic.toString();
   var splitPic = stringPic.split(',')
