@@ -124,7 +124,7 @@ $(document).ready(function(){
     keyC.findMinorScale();
     var keyDb = new Key (["Db","ebmin","fmin","Gb","Ab","bb","cmin"])
     keyDb.findMinorScale();
-    var keyD = new Key (["D","emin","f#","G","A","bmin","c#min"])
+    var keyD = new Key (["D","emin","f#min","G","A","bmin","c#min"])
     keyD.findMinorScale();
     var keyEb = new Key (["Eb","fmin","gmin","Ab","Bb","cmin","dmin"])
     keyEb.findMinorScale();

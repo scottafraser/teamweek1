@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 100" style="enable-background:new 0 0 80 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:0.9;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="Layer_1">
+	<g>
+		<rect x="16.5" y="36.9" class="st0" width="47.3" height="47.6"/>
+		<line class="st0" x1="25.9" y1="36.8" x2="25.9" y2="84.6"/>
+		<line class="st0" x1="16.5" y1="36.8" x2="16.5" y2="84.6"/>
+		<line class="st0" x1="63.8" y1="36.8" x2="63.8" y2="84.6"/>
+		<line class="st0" x1="44.9" y1="36.8" x2="44.9" y2="84.6"/>
+		<line class="st0" x1="35.4" y1="36.8" x2="35.4" y2="84.6"/>
+		<line class="st0" x1="54.3" y1="36.8" x2="54.3" y2="84.6"/>
+		<line class="st0" x1="64" y1="46.5" x2="16.2" y2="46.5"/>
+		<line class="st0" x1="64" y1="37.1" x2="16.2" y2="37.1"/>
+		<line class="st0" x1="64" y1="84.4" x2="16.2" y2="84.4"/>
+		<line class="st0" x1="64" y1="65.5" x2="16.2" y2="65.5"/>
+		<line class="st0" x1="64" y1="56" x2="16.2" y2="56"/>
+		<line class="st0" x1="64" y1="74.9" x2="16.2" y2="74.9"/>
+	</g>
+	<circle class="st1" cx="26" cy="30.8" r="2.7"/>
+	<circle class="st1" cx="16.8" cy="30.8" r="2.7"/>
+	<circle class="st1" cx="63.2" cy="30.9" r="2.7"/>
+	<g>
+		<circle class="st2" cx="35.3" cy="51.5" r="2.4"/>
+		<circle class="st2" cx="44.8" cy="51.5" r="2.4"/>
+		<circle class="st2" cx="54.3" cy="51.5" r="2.4"/>
+	</g>
+	<g>
+		<path class="st3" d="M23.3,21.2l-0.7-1.7h-3.3l-0.6,1.7h-2.2l3.6-8.5h2l3.5,8.5H23.3z M21,15l-1.1,2.9h2.1L21,15z"/>
+	</g>
+</g>
+<g id="guides_frets_x2F_strings">
+</g>
+</svg>
