@@ -49,9 +49,16 @@ function pop(x) {
   return pictures
 }
 
+function metal(x) {
+  var progression = (x[0] + "," +  x[5] + "," + x[2] + "," + x[6]);
+  var array = progression.split(',')
+  console.log(array);
+  var pictures = makePic(array)
+  console.log(pictures);
+  return pictures
+}
+
 // picture functions
-
-
 function makePic(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
@@ -72,6 +79,7 @@ function buildMajorChords(key){
   $('#rockChords').html(rock(key.majorScale))
   $('#bluesChords').html(blues(key.majorScale))
   $('#popChords').html(pop(key.majorScale))
+  $('#metalChords').html(metal(key.majorScale))
 }
 
 function buildMinorChords(key){
@@ -79,8 +87,20 @@ function buildMinorChords(key){
   $('#rockChords').html(rock(key.minorScale))
   $('#bluesChords').html(blues(key.minorScale))
   $('#popChords').html(pop(key.minorScale))
+  $('#metalChords').html(metal(key.minorScale))
 }
 
+//audio funtions
+
+function makeAudio(x) {
+  var pic = []
+  for (var i = 0; i < x.length; i++) {
+    pic.push('<img src="img/chords/' + x[i] +'.svg">');
+    }
+  var stringPic = pic.toString();
+  var splitPic = stringPic.split(',')
+  return splitPic;
+}
 // front end
 $(document).ready(function(){
 
