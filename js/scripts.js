@@ -124,25 +124,25 @@ $(document).ready(function(){
     keyC.findMinorScale();
     var keyDb = new Key (["Db","ebmin","fmin","Gb","Ab","bb","cmin"])
     keyDb.findMinorScale();
-    var keyD = new Key (["D","emin","f#min","G","A","bmin","c#min"])
+    var keyD = new Key (["D","emin","fsharpmin","G","A","bmin","dbmin"])
     keyD.findMinorScale();
     var keyEb = new Key (["Eb","fmin","gmin","Ab","Bb","cmin","dmin"])
     keyEb.findMinorScale();
-    var keyE = new Key (["E","f#min","g#min","A","B","c#min","d#min"])
+    var keyE = new Key (["E","fsharpmin","abmin","A","B","dbmin","ebmin"])
     keyE.findMinorScale();
     var keyF = new Key (["F","gmin","amin","Bb","C","dmin","emin"])
     keyF.findMinorScale();
-    var keyFsharp = new Key (["F#","g#min","a#min","B","C#","d#min","fmin"])
+    var keyFsharp = new Key (["Fsharp","abmin","bbmin","B","Db","ebmin","fmin"])
     keyFsharp.findMinorScale();
-    var keyG = new Key (["G","amin","bmin","C","D","emin","f#min"])
+    var keyG = new Key (["G","amin","bmin","C","D","emin","fsharpmin"])
     keyG.findMinorScale();;
     var keyAb = new Key (["Ab","bbmin","cmin","Db","Eb","fmin","gmin"])
     keyAb.findMinorScale();
-    var keyA = new Key (["A","bmin","c#min","D","E","f#min","g#min"])
+    var keyA = new Key (["A","bmin","dbmin","D","E","fsharpmin","abmin"])
     keyA.findMinorScale();
     var keyBb = new Key (["Bb","cmin","dmin","Eb","F","gmin","amin"])
     keyBb.findMinorScale();
-    var keyB = new Key (["B","c#min","d#min","E","F#","g#min","a#min"])
+    var keyB = new Key (["B","dbmin","ebmin","E","Fsharp","abmin","bbmin"])
     keyB.findMinorScale();
 
 
