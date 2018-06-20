@@ -11,13 +11,14 @@ Key.prototype.findMinorScale = function() {
   this.minorScale = stringArray.split(',')
 }
 
+
 // genre functions
 
 function jazz(x) {
   var progression= (x[1] + "," +  x[4] + '7' + "," + x[0]);
   var array = progression.split(',')
   console.log(array);
-  var pictures = makePic(jazzArray)
+  var pictures = makePic(array)
   return pictures
 };
 
@@ -49,10 +50,18 @@ function pop(x) {
 }
 
 // picture functions
+function isLower(character) {
+  if (character.toLowerCase() === true)
+  }
+
 function makePic(x) {
   var pic = []
   for (var i = 0; i < x.length; i++) {
-  pic.push('<img src="img/' + x[i] +'.png">');
+    if (isLower(x) === true){
+      pic.push('<img src="img/chords/' + x[i] +'min.svg">');
+    } else {
+      pic.push('<img src="img/chords/' + x[i] +'.svg">');
+    }
   }
   var stringPic = pic.toString();
   var splitPic = stringPic.split(',')
@@ -67,15 +76,15 @@ function shiftPic(x){
 function buildMajorChords(key){
   $('#jazzChords').html(jazz(key.majorScale))
   $('#rockChords').html(rock(key.majorScale))
-  $('#showChords').html(blues(key.majorScale))
-  $('#showChords').html(pop(key.majorScale))
+  $('#bluesChords').html(blues(key.majorScale))
+  $('#popChords').html(pop(key.majorScale))
 }
 
 function buildMinorChords(key){
   $('#jazzChords').html(jazz(key.minorScale))
   $('#rockChords').html(rock(key.minorScale))
-  $('#showChords').html(blues(key.minorScale))
-  $('#showChords').html(pop(key.minorScale))
+  $('#bluesChords').html(blues(key.minorScale))
+  $('#popChords').html(pop(key.minorScale))
 }
 
 // front end
