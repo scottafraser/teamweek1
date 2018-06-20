@@ -7,8 +7,9 @@ font-family: 'Rokkitt', serif;*/
 }*/
 
 body {
-   /*background: linear-gradient(to top, #593662, #6A6A8F);*/
-   background: linear-gradient(to top, #463b59, #373338);
+   /*background: linear-gradient(to top, #463b59, #373338);*/
+    background: linear-gradient(to top, #200526, #1d0023);
+   /*background: #200526;*/
 }
 
 p {
@@ -67,7 +68,7 @@ h3 {
   color: white;
   box-shadow: 15px 15px 70px rgba(10, 10, 10, .35);
   padding-bottom: 20px;
-  background-color: #463b59;
+  background-color: #320038;
   border-radius: 8px;
 }
 .form h1 {
@@ -87,7 +88,19 @@ h3 {
   border-radius: 8px;
   box-shadow: 15px 15px 70px rgba(10, 10, 10, .5);
 }
+.home {
 
+  background-image: url('../img/home.jpg');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #320038;
+}
+
+.home h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+}
 .jazz {
   background-image: url('../img/jazz.jpg');
   background-position: right;
@@ -175,6 +188,10 @@ h3 {
   margin-bottom: 100px;
   display: none;
 }
+
+#home {
+  margin-bottom: 100px;
+}
 .col-md-8 {
   padding: 20px;
 }
@@ -202,6 +219,7 @@ h4 {
   margin-top: 20px;
   border-bottom-width: 0px;
   border-radius: 8px;
+  border-color: #C05258;
 }
 
 h4:hover {
@@ -215,7 +233,8 @@ h4:hover {
 .selected {
     color: rgba(255, 255, 255, 1);
     border-bottom-style: outset;
-    border-bottom-width: 3px;
+    border-bottom-width: 2px;
+    border-color: #C05258;
     padding-bottom: 7px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, .05);
