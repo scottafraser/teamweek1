@@ -204,6 +204,11 @@ h4:hover {
     border-bottom-style: outset;
     padding-bottom: 7px;
 }
+
+.display {
+  color: transparent;
+  font-size: 0;
+}
 /*#head {
   margin-bottom: 100px;
   font-family: sans-serif;
