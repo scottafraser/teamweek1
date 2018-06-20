@@ -209,21 +209,29 @@ $(document).ready(function(){
   });
   $("#bluesBtn").click(function(event) {
     event.preventDefault();
+    removeSelectedClass();
+    $("#bluesBtn").addClass("selected");
     hideAll();
     $("#blues").show();
   });
   $("#popBtn").click(function(event) {
     event.preventDefault();
+    removeSelectedClass();
+    $("#popBtn").addClass("selected");
     hideAll();
     $("#pop").show();
   });
   $("#punkBtn").click(function(event) {
     event.preventDefault();
+    removeSelectedClass();
+    $("#punkBtn").addClass("selected");
     hideAll();
     $("#punk").show();
   });
   $("#rockBtn").click(function(event) {
     event.preventDefault();
+    removeSelectedClass();
+    $("#rockBtn").addClass("selected");
     hideAll();
     $("#rock").show();
   });
