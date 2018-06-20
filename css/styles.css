@@ -22,17 +22,15 @@ H1 {
   letter-spacing: 3PX;
   font-family: 'Oswald', sans-serif;
 }
-
-h3 {
-  font-family: sans-serif;
-  font-size: 20px;
-  float: left;
-}
 .center {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
     margin-top: -50px;
+}
+
+h3 {
+  letter-spacing: 1px;
 }
 
 /*Makes form area smaller, but does not account for form titles*/
@@ -41,7 +39,19 @@ h3 {
 }
 
 .btn-md {
+  letter-spacing: 1px;
+  font-size: 19px;
+  color: white;
   margin-top: 54px;
+  background-color: black;
+  border: solid rgba(255, 255, 255, 0.2) 1px;
+  background: linear-gradient(to top, #200526, #1d0023);
+}
+.btn-md:hover {
+  /*background-color: inherit;*/
+  color: white;
+  border: solid white 2px);
+  transition: .75s;
 }
 
 .col-md-4 {
@@ -219,7 +229,6 @@ h4 {
   margin-top: 20px;
   border-bottom-width: 0px;
   border-radius: 8px;
-  border-color: #C05258;
 }
 
 h4:hover {
@@ -233,8 +242,7 @@ h4:hover {
 .selected {
     color: rgba(255, 255, 255, 1);
     border-bottom-style: outset;
-    border-bottom-width: 2px;
-    border-color: #C05258;
+    border-bottom-width: 1px;
     padding-bottom: 7px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, .05);
