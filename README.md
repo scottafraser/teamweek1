@@ -14,6 +14,7 @@ This site is a tool to create examples and facilitate ideas for simple chord pro
 |Allow user to choose a key | click 'C'| C |   
 |Allow user to pick a scale | click 'major' | major |
 |Allow user to pick a genre | click 'jazz' | *shows jazz section* |
+| random | fadsf | alfk |
 
 ## Setup/Contribution Requirements
 
