@@ -87,6 +87,22 @@ function buildMinorChords(key){
   $('#bluesChords').html(blues(key.minorScale))
   $('#popChords').html(pop(key.minorScale))
 }
+function hideAll() {
+  $("#home").hide()
+  $("#jazz").hide()
+  $("#blues").hide()
+  $("#pop").hide()
+  $("#punk").hide()
+  $("#rock").hide()
+}
+function removeSelectedClass() {
+  $("#homeBtn").removeClass("selected")
+  $("#jazzBtn").removeClass("selected")
+  $("#bluesBtn").removeClass("selected")
+  $("#popBtn").removeClass("selected")
+  $("#punkBtn").removeClass("selected")
+  $("#rockBtn").removeClass("selected")
+}
 
 // front end
 $(document).ready(function(){
@@ -177,9 +193,38 @@ $(document).ready(function(){
 
   // nav function
 
-  $("p").click(function(event) {
+  $("#homeBtn").click(function(event) {
     event.preventDefault();
-    $("#mainInfo").show();
-
+    removeSelectedClass();
+    $("#homeBtn").addClass("selected");
+    hideAll();
+    $("#home").show();
+  });
+  $("#jazzBtn").click(function(event) {
+    event.preventDefault();
+    removeSelectedClass();
+    $("#jazzBtn").addClass("selected");
+    hideAll();
+    $("#jazz").show();
+  });
+  $("#bluesBtn").click(function(event) {
+    event.preventDefault();
+    hideAll();
+    $("#blues").show();
+  });
+  $("#popBtn").click(function(event) {
+    event.preventDefault();
+    hideAll();
+    $("#pop").show();
+  });
+  $("#punkBtn").click(function(event) {
+    event.preventDefault();
+    hideAll();
+    $("#punk").show();
+  });
+  $("#rockBtn").click(function(event) {
+    event.preventDefault();
+    hideAll();
+    $("#rock").show();
   });
 });

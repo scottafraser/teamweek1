@@ -183,7 +183,7 @@ h3 {
   list-style: none;
   justify-content: space-around;
   font-family: sans-serif;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
   letter-spacing: 3px;
   font-weight: bolder;
   font-size: 28px;
@@ -194,6 +194,9 @@ h3 {
   color: rgba(255, 255, 255, 1);
   transition: .5s;
   cursor: pointer;
+}
+.selected {
+    color: white;
 }
 /*#head {
   margin-bottom: 100px;
