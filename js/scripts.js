@@ -1,21 +1,19 @@
-// back end
 function Key(majorScale, minorScale) {
   this.majorScale = majorScale
   this.minorScale = minorScale;
 }
 Key.prototype.findMinorScale = function() {
-  var minorArray = []
-  var minorSplice = this.majorScale.slice(5, 7)
-  minorArray.push(minorSplice + "," + this.majorScale.slice(0, 5))
-  var stringArray = minorArray.toString()
-  this.minorScale = stringArray.split(',')
-}
-// genre functions
+    var minorArray = []
+    var minorSplice = this.majorScale.slice(5, 7)
+    minorArray.push(minorSplice + "," + this.majorScale.slice(0, 5))
+    var stringArray = minorArray.toString()
+    this.minorScale = stringArray.split(',')
+  }
 function makeChordChartsandAudio(x) {
   var array = x.split(',')
   var pictures = makePic(array)
   var sounds = makeAudio(array)
-  var picturesAndSounds =  pictures + sounds
+  var picturesAndSounds = pictures + sounds
   return picturesAndSounds
 }
 
@@ -26,12 +24,13 @@ function jazz(x) {
 }
 
 function rock(x) {
-  var progression = (x[0] + "," +  x[3] + "," + x[4] + "," + x[0]);
+  var progression = (x[0] + "," + x[3] + "," + x[4] + "," + x[0]);
   var soundAndVison = makeChordChartsandAudio(progression)
   return soundAndVison
 }
+
 function punk(x) {
-  var progression = (x[0] + "," +  x[3] + "," + x[4] + "," + x[0]);
+  var progression = (x[0] + "," + x[3] + "," + x[4] + "," + x[0]);
   var soundAndVison = makeChordChartsandAudio(progression)
   return soundAndVison
 }
@@ -53,10 +52,9 @@ function metal(x) {
   var soundAndVison = makeChordChartsandAudio(progression)
   return soundAndVison
 }
-// picture functions
 function makePic(x) {
   var pic = []
-  for (var i = 0; i < x.length; i++) {
+  for(var i = 0; i < x.length; i++) {
     pic.push('<img src="img/chords/' + x[i] + '.svg">');
   }
   var stringPic = pic.toString();
@@ -68,7 +66,6 @@ function shiftPic(x) {
   var chord = x.shift()
   return chord
 }
-// chord functions
 function buildMajorChords(key) {
   $('#jazzChords').html(jazz(key.majorScale))
   $('#rockChords').html(rock(key.majorScale))
@@ -86,10 +83,9 @@ function buildMinorChords(key) {
   $('#metalChords').html(metal(key.minorScale))
   $('#punkChords').html(punk(key.minorScale))
 }
-//audio funtions
 function makeAudio(x) {
   var pic = []
-  for (var i = 0; i < x.length; i++) {
+  for(var i = 0; i < x.length; i++) {
     pic.push('<audio controls>' + '<source src="newAudio/' + x[i] + '.mp3" type="audio/mp3">' + '</audio>');
   }
   var stringPic = pic.toString();
@@ -116,7 +112,6 @@ function removeSelectedClass() {
   $("#punkBtn").removeClass("selected")
   $("#rockBtn").removeClass("selected")
 }
-// front end
 $(document).ready(function() {
   var keyC = new Key(["C", "dmin", "emin", "F", "G", "amin", "bmin"])
   keyC.findMinorScale();
@@ -146,99 +141,94 @@ $(document).ready(function() {
     event.preventDefault();
     var key = $('#key').find(":selected").val();
     var scale = $('#major').find(":selected").val();
-    if (key === 'keyC' && scale === 'Major') {
+    if(key === 'keyC' && scale === 'Major') {
       buildMajorChords(keyC)
-    } else if (key === 'keyDb' && scale === 'Major') {
+    } else if(key === 'keyDb' && scale === 'Major') {
       buildMajorChords(keyDb)
-    } else if (key === 'keyD' && scale === 'Major') {
+    } else if(key === 'keyD' && scale === 'Major') {
       buildMajorChords(keyD)
-    } else if (key === 'Eb' && scale === 'Major') {
+    } else if(key === 'Eb' && scale === 'Major') {
       buildMajorChords(keyEb)
-    } else if (key === 'keyE' && scale === 'Major') {
+    } else if(key === 'keyE' && scale === 'Major') {
       buildMajorChords(keyE)
-    } else if (key === 'keyF' && scale === 'Major') {
+    } else if(key === 'keyF' && scale === 'Major') {
       buildMajorChords(keyF)
-    } else if (key === 'keyFsharp' && scale === 'Major') {
+    } else if(key === 'keyFsharp' && scale === 'Major') {
       buildMajorChords(keyFsharp)
-    } else if (key === 'keyG' && scale === 'Major') {
+    } else if(key === 'keyG' && scale === 'Major') {
       buildMajorChords(keyG)
-    } else if (key === 'keyAb' && scale === 'Major') {
+    } else if(key === 'keyAb' && scale === 'Major') {
       buildMajorChords(keyAb)
-    } else if (key === 'keyA' && scale === 'Major') {
+    } else if(key === 'keyA' && scale === 'Major') {
       buildMajorChords(keyA)
-    } else if (key === 'keyBb' && scale === 'Major') {
+    } else if(key === 'keyBb' && scale === 'Major') {
       buildMajorChords(keyBb)
-    } else if (key === 'keyB' && scale === 'Major') {
+    } else if(key === 'keyB' && scale === 'Major') {
       buildMajorChords(keyB)
-      // minor
     }
-    if (key === 'keyC' && scale === 'Minor') {
+    if(key === 'keyC' && scale === 'Minor') {
       buildMinorChords(keyEb)
-    } else if (key === 'keyDb' && scale === 'Minor') {
+    } else if(key === 'keyDb' && scale === 'Minor') {
       buildMinorChords(keyE)
-    } else if (key === 'keyD' && scale === 'Minor') {
+    } else if(key === 'keyD' && scale === 'Minor') {
       buildMinorChords(keyF)
-    } else if (key === 'Eb' && scale === 'Minor') {
+    } else if(key === 'Eb' && scale === 'Minor') {
       buildMinorChords(keyFsharp)
-    } else if (key === 'keyE' && scale === 'Minor') {
+    } else if(key === 'keyE' && scale === 'Minor') {
       buildMinorChords(keyG)
-    } else if (key === 'keyF' && scale === 'Minor') {
+    } else if(key === 'keyF' && scale === 'Minor') {
       buildMinorChords(keyAb)
-    } else if (key === 'keyFsharp' && scale === 'Minor') {
+    } else if(key === 'keyFsharp' && scale === 'Minor') {
       buildMinorChords(keyA)
-    } else if (key === 'keyG' && scale === 'Minor') {
+    } else if(key === 'keyG' && scale === 'Minor') {
       buildMinorChords(keyBb)
-    } else if (key === 'keyAb' && scale === 'Minor') {
+    } else if(key === 'keyAb' && scale === 'Minor') {
       buildMinorChords(keyB)
-    } else if (key === 'keyA' && scale === 'Minor') {
+    } else if(key === 'keyA' && scale === 'Minor') {
       buildMinorChords(keyC)
-    } else if (key === 'keyBb' && scale === 'Minor') {
+    } else if(key === 'keyBb' && scale === 'Minor') {
       buildMinorChords(keyDb)
-    } else if (key === 'keyB' && scale === 'Minor') {
+    } else if(key === 'keyB' && scale === 'Minor') {
       buildMinorChords(keyD)
     }
   });
-  // nav function
-  $("#metalBtn").click(function(event) {
-    event.preventDefault();
-    hideAll();
+  $("#metalBtn").click(function() {
     removeSelectedClass();
     $("#metalBtn").addClass("selected");
-    $("#metal, #generator").show();
-  });
-  $("#jazzBtn").click(function(event) {
-    event.preventDefault();
     hideAll();
+    $("#metal").show();
+  });
+  $("#jazzBtn").click(function() {
     removeSelectedClass();
     $("#jazzBtn").addClass("selected");
-    $("#jazz, #generator").show();
-  });
-  $("#bluesBtn").click(function(event) {
-    event.preventDefault();
     hideAll();
+    $("#jazz").show();
+  });
+  $("#bluesBtn").click(function() {
     removeSelectedClass();
     $("#bluesBtn").addClass("selected");
-    $("#blues, #generator").show();
-  });
-  $("#popBtn").click(function(event) {
-    event.preventDefault();
     hideAll();
+    $("#blues").show();
+  });
+  $("#popBtn").click(function() {
     removeSelectedClass();
     $("#popBtn").addClass("selected");
-    $("#pop, #generator").show();
-  });
-  $("#punkBtn").click(function(event) {
-    event.preventDefault();
     hideAll();
+    $("#pop").show();
+  });
+  $("#punkBtn").click(function() {
     removeSelectedClass();
     $("#punkBtn").addClass("selected");
-    $("#punk, #generator").show();
-  });
-  $("#rockBtn").click(function(event) {
-    event.preventDefault();
     hideAll();
+    $("#punk").show();
+  });
+  $("#rockBtn").click(function() {
     removeSelectedClass();
     $("#rockBtn").addClass("selected");
-    $("#rock, #generator").show();
+    hideAll();
+    $("#rock").show();
   });
+  $("#genres").click(function() {
+    $("#generator").show();
+  })
 });
