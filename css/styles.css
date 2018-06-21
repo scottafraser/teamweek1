@@ -275,7 +275,7 @@ h4:hover {
   transition-delay: 50ms
 }
 body:hover span {
-  opacity: .75
+  opacity: 1;
 }
 .btn-md:active {
   background-color: #200526;
