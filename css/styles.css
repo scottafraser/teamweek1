@@ -17,8 +17,10 @@ body {
 }
 p {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 23px;
   font-family: sans-serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
 }
 H1 {
   color: white;
@@ -180,11 +182,19 @@ h3 {
   margin-bottom: 100px;
   display: none;
 }
+
 #home {
   margin-bottom: 100px;
 }
+
+.col-md-8 audio {
+  display: flex;
+  justify-content: space-around;
+}
+
 .col-md-8 {
   padding: 20px;
+
 }
 .col-md-8 img {
   float: left;

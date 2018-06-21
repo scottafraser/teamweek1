@@ -15,7 +15,7 @@ function makeChordChartsandAudio(x) {
   var array = x.split(',')
   var pictures = makePic(array)
   var sounds = makeAudio(array)
-  var picturesAndSounds = pictures + sounds
+  var picturesAndSounds =  pictures + sounds
   return picturesAndSounds
 }
 
@@ -26,7 +26,12 @@ function jazz(x) {
 }
 
 function rock(x) {
-  var progression = (x[0] + "," + x[3] + "," + x[4]);
+  var progression = (x[0] + "," +  x[3] + "," + x[4] + "," + x[0]);
+  var soundAndVison = makeChordChartsandAudio(progression)
+  return soundAndVison
+}
+function punk(x) {
+  var progression = (x[0] + "," +  x[3] + "," + x[4] + "," + x[0]);
   var soundAndVison = makeChordChartsandAudio(progression)
   return soundAndVison
 }
@@ -70,6 +75,7 @@ function buildMajorChords(key) {
   $('#bluesChords').html(blues(key.majorScale))
   $('#popChords').html(pop(key.majorScale))
   $('#metalChords').html(metal(key.majorScale))
+  $('#punkChords').html(punk(key.majorScale))
 }
 
 function buildMinorChords(key) {
@@ -78,6 +84,7 @@ function buildMinorChords(key) {
   $('#bluesChords').html(blues(key.minorScale))
   $('#popChords').html(pop(key.minorScale))
   $('#metalChords').html(metal(key.minorScale))
+  $('#punkChords').html(punk(key.minorScale))
 }
 //audio funtions
 function makeAudio(x) {
