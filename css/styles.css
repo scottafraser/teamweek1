@@ -168,17 +168,43 @@ h3 {
 #home {
 	margin-bottom: 100px
 }
-.col-md-8 audio {
-	display: flex;
-	justify-content: space-around
-}
+
 .col-md-8 {
-	padding: 20px
+	padding: 20px;
+	align-items: center;
 }
 .col-md-8 img {
 	float: left;
 	width: 25%
 }
+
+.col-md-8 audio {
+	float: left;
+	width: 25%
+}
+
+
+#jazz .col-md-8 img {
+	float: left;
+	width: 33%
+}
+
+#jazz .col-md-8 audio {
+	float: left;
+	width: 33%
+}
+
+#blues .col-md-8 img {
+	float: left;
+	width: 33%
+}
+
+#blues .col-md-8 audio {
+	float: left;
+	width: 33%
+}
+
+
 #genres {
 	height: 75px;
 	width: auto
@@ -217,6 +243,8 @@ h4:hover {
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, .05)
 }
+
+
 .display {
 	color: transparent;
 	font-size: 0
