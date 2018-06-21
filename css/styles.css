@@ -12,6 +12,11 @@ body {
    /*background: #200526;*/
 }
 
+audio {
+  width: 20%;
+  margin-right: 30px;
+
+}
 p {
   font-size: 18px;
   line-height: 20px;
@@ -197,6 +202,10 @@ h3 {
 #jazz, #blues, #pop, #punk, #metal, #rock {
   margin-bottom: 100px;
   display: none;
+}
+
+#jazzChords, #bluesChords {
+  padding: 60px;
 }
 
 #home {
