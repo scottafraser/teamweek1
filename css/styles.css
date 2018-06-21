@@ -39,19 +39,22 @@ h3 {
 }
 
 .btn-md {
+  font-family: sans-serif;
+  background-color: #320038;
+  color: rgba(255, 255, 255, .85);
   letter-spacing: 1px;
-  font-size: 19px;
-  color: white;
-  margin-top: 54px;
-  background-color: black;
-  border: solid rgba(255, 255, 255, 0.2) 1px;
-  background: linear-gradient(to top, #200526, #1d0023);
+  font-size: 15px;
+  transition: .5s;
+  margin-top: 56px;
+  border-radius: 10px;
 }
 .btn-md:hover {
   /*background-color: inherit;*/
-  color: white;
-  border: solid white 2px);
+  background-color: #200526;
+  color: rgba(255, 255, 255, 1);
   transition: .75s;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .col-md-4 {
@@ -79,7 +82,7 @@ h3 {
   box-shadow: 15px 15px 70px rgba(10, 10, 10, .35);
   padding-bottom: 20px;
   background-color: #320038;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .form h1 {
   text-align: center;
@@ -95,7 +98,7 @@ h3 {
 .card {
   color: white;
   height: 700px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 15px 15px 70px rgba(10, 10, 10, .5);
 }
 .home {
@@ -214,7 +217,9 @@ h3 {
   width: auto;
 }
 
-
+#generator {
+  display: none;
+}
 h4 {
   display: flex;
   list-style: none;
@@ -228,7 +233,7 @@ h4 {
   padding: 7px;
   margin-top: 20px;
   border-bottom-width: 0px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 h4:hover {
@@ -237,14 +242,14 @@ h4:hover {
   cursor: pointer;
   padding: 7px;
   background-color: rgba(255, 255, 255, .025);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .selected {
     color: rgba(255, 255, 255, 1);
     border-bottom-style: outset;
     border-bottom-width: 1px;
     padding-bottom: 7px;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, .05);
 }
 
@@ -258,3 +263,28 @@ h4:hover {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }*/
+
+.col-md-8 span {
+    opacity: 0;
+    transition: opacity 1300ms
+}
+
+.col-md-8 span:nth-child(1)  { transition-delay:  200ms }
+.col-md-8 span:nth-child(2)  { transition-delay: 1200ms }
+.col-md-8 span:nth-child(3)  { transition-delay:  800ms }
+.col-md-8 span:nth-child(4)  { transition-delay:  300ms }
+.col-md-8 span:nth-child(5)  { transition-delay:  700ms }
+.col-md-8 span:nth-child(6)  { transition-delay:  600ms }
+.col-md-8 span:nth-child(7)  { transition-delay:  400ms }
+.col-md-8 span:nth-child(8)  { transition-delay:  900ms }
+.col-md-8 span:nth-child(9)  { transition-delay:  700ms }
+.col-md-8 span:nth-child(10) { transition-delay:   50ms }
+
+body:hover span {
+    opacity: .75
+}
+.btn-md:active {
+  background-color: #200526;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}

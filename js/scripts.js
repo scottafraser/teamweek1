@@ -99,14 +99,14 @@ function makeAudio(x) {
   return splitPic;
 }
 
-function fadeAll() {
-  $("#home").fadeOut()
-  $("#metal").fadeOut()
-  $("#jazz").fadeOut()
-  $("#blues").fadeOut()
-  $("#pop").fadeOut()
-  $("#punk").fadeOut()
-  $("#rock").fadeOut()
+function fadeAll(t) {
+  $("#home").fadeOut(t)
+  $("#metal").fadeOut(t)
+  $("#jazz").fadeOut(t)
+  $("#blues").fadeOut(t)
+  $("#pop").fadeOut(t)
+  $("#punk").fadeOut(t)
+  $("#rock").fadeOut(t)
 }
 function removeSelectedClass() {
   $("#metalBtn").removeClass("selected")
@@ -119,6 +119,8 @@ function removeSelectedClass() {
 
 // front end
 $(document).ready(function(){
+
+
 
     var keyC = new Key (["C","dmin","emin","F","G","amin","bmin"])
     keyC.findMinorScale();
@@ -144,7 +146,6 @@ $(document).ready(function(){
     keyBb.findMinorScale();
     var keyB = new Key (["B","dbmin","ebmin","E","Fsharp","abmin","bbmin"])
     keyB.findMinorScale();
-
 
   $("#chordButton").click(function(event) {
     event.preventDefault();
@@ -208,44 +209,44 @@ $(document).ready(function(){
 
   $("#metalBtn").click(function(event) {
     event.preventDefault();
-    fadeAll();
+    fadeAll(200);
     removeSelectedClass();
     $("#metalBtn").addClass("selected");
-    $("#metal").fadeIn();
+    $("#metal, #generator").fadeIn(200);
   });
   $("#jazzBtn").click(function(event) {
     event.preventDefault();
-    fadeAll();
+    fadeAll(200);
     removeSelectedClass();
     $("#jazzBtn").addClass("selected");
-    $("#jazz").fadeIn();
+    $("#jazz, #generator").fadeIn(200);
   });
   $("#bluesBtn").click(function(event) {
     event.preventDefault();
-    fadeAll();
+    fadeAll(200);
     removeSelectedClass();
     $("#bluesBtn").addClass("selected");
-    $("#blues").fadeIn();
+    $("#blues, #generator").fadeIn(200);
   });
   $("#popBtn").click(function(event) {
     event.preventDefault();
-    fadeAll();
+    fadeAll(200);
     removeSelectedClass();
     $("#popBtn").addClass("selected");
-    $("#pop").fadeIn();
+    $("#pop, #generator").fadeIn(200);
   });
   $("#punkBtn").click(function(event) {
     event.preventDefault();
-    fadeAll();
+    fadeAll(200);
     removeSelectedClass();
     $("#punkBtn").addClass("selected");
-    $("#punk").fadeIn();
+    $("#punk, #generator").fadeIn(200);
   });
   $("#rockBtn").click(function(event) {
     event.preventDefault();
-    fadeAll();
+    fadeAll(200);
     removeSelectedClass();
     $("#rockBtn").addClass("selected");
-    $("#rock").fadeIn();
+    $("#rock, #generator").fadeIn(200);
   });
 });

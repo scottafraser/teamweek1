@@ -31,8 +31,19 @@
   <div id="mainInfo" class="container-fluid">
     <div id="home">
       <div class="container-fluid row card home">
-        <div class="col-md-4">
-          <h2>Step into the world of music...</h2>
+        <div class="col-md-8">
+          <h2>
+            <span>M</span>
+            <span>U</span>
+            <span>S</span>
+            <span>I</span>
+            <span>C</span>
+            <span>A</span>
+            <span>L</span>
+            <span>I</span>
+            <span>T</span>
+            <span>Y</span>
+          </h2>
           <h3>Chord Progression</h3>
           <p>While music is an expression of art and emotion, the bulk of western music is performed on the same scale.  Most of the music we enjoy can be broken down into the same 12 notes.  Different genres have different feels and expressions based entirely on how intervals and scales are utilized.
 a blues song might share the same key and scale as a pop song, but that's where the similarities will end because each approaches the intervals between notes and unfolds in a completely different way.</p>
@@ -107,42 +118,43 @@ Metal tended to focus more on minor scales for a darker, foreboding sound and es
         </div>
       </div>
     </div>
-      <div class="center">
-        <div class="row form container-fluid">
-        <h1>GUITAR CHORD PROGRESSION GENERATOR</h1>
-          <form id="theForm" action="index.html" method="post">
-            <!-- <div class="col-md-6"></div> -->
-            <div class="col-md-4 formbutton">
-              <h3>Select Key:</h3>
-              <select id="key" class="form-control">
-                <option value="keyC">C</option>
-                <option value="keyDb">Db</option>
-                <option value="keyD">D</option>
-                <option value="keyEb">Eb</option>
-                <option value="keyE">E</option>
-                <option value="keyF">F</option>
-                <option value="keyFsharp">F#</option>
-                <option value="keyG">G</option>
-                <option value="keyA">A</option>
-                <option value="keyAb">Ab</option>
-                <option value="keyBb">Bb</option>
-                <option value="keyB">B</option>
-              </select>
-            </div>
-            <div class="col-md-4 formbutton">
-              <h3>Select Scale:</h3>
-              <select id="major" class="form-control dropdown">
-                <option>Major</option>
-                <option>Minor</option>
-              </select>
-            </div>
-            <div class="col-md-4 formbutton">
-              <button id="chordButton" class="btn btn-default btn-md" type="submit" name="button">Generate Chords</button>
-            </div>
-            <!-- <div class="col-md-3"></div> -->
-          </form>
+      <div id="generator">
+        <div class="center">
+          <div class="row form container-fluid">
+          <h1>GUITAR CHORD PROGRESSION GENERATOR</h1>
+            <form id="theForm" action="index.html" method="post">
+              <!-- <div class="col-md-6"></div> -->
+              <div class="col-md-4 formbutton">
+                <h3>Select Key:</h3>
+                <select id="key" class="form-control">
+                  <option value="keyC">C</option>
+                  <option value="keyDb">Db</option>
+                  <option value="keyD">D</option>
+                  <option value="keyEb">Eb</option>
+                  <option value="keyE">E</option>
+                  <option value="keyF">F</option>
+                  <option value="keyFsharp">F#</option>
+                  <option value="keyG">G</option>
+                  <option value="keyA">A</option>
+                  <option value="keyAb">Ab</option>
+                  <option value="keyBb">Bb</option>
+                  <option value="keyB">B</option>
+                </select>
+              </div>
+              <div class="col-md-4 formbutton">
+                <h3>Select Scale:</h3>
+                <select id="major" class="form-control dropdown">
+                  <option>Major</option>
+                  <option>Minor</option>
+                </select>
+              </div>
+              <div class="col-md-4 formbutton">
+                <button id="chordButton" class="btn btn-default btn-md" type="submit" name="button">Generate Chords</button>
+              </div>
+              <!-- <div class="col-md-3"></div> -->
+            </form>
+          </div>
         </div>
       </div>
-    </div>
 </body>
 </html>
