@@ -99,14 +99,14 @@ function makeAudio(x) {
   return splitPic;
 }
 
-function hideAll() {
-  $("#home").hide()
-  $("#metal").hide()
-  $("#jazz").hide()
-  $("#blues").hide()
-  $("#pop").hide()
-  $("#punk").hide()
-  $("#rock").hide()
+function fadeAll() {
+  $("#home").fadeOut()
+  $("#metal").fadeOut()
+  $("#jazz").fadeOut()
+  $("#blues").fadeOut()
+  $("#pop").fadeOut()
+  $("#punk").fadeOut()
+  $("#rock").fadeOut()
 }
 function removeSelectedClass() {
   $("#metalBtn").removeClass("selected")
@@ -208,44 +208,44 @@ $(document).ready(function(){
 
   $("#metalBtn").click(function(event) {
     event.preventDefault();
+    fadeAll();
     removeSelectedClass();
     $("#metalBtn").addClass("selected");
-    hideAll();
-    $("#metal").show();
+    $("#metal").fadeIn();
   });
   $("#jazzBtn").click(function(event) {
     event.preventDefault();
+    fadeAll();
     removeSelectedClass();
     $("#jazzBtn").addClass("selected");
-    hideAll();
-    $("#jazz").show();
+    $("#jazz").fadeIn();
   });
   $("#bluesBtn").click(function(event) {
     event.preventDefault();
+    fadeAll();
     removeSelectedClass();
     $("#bluesBtn").addClass("selected");
-    hideAll();
-    $("#blues").show();
+    $("#blues").fadeIn();
   });
   $("#popBtn").click(function(event) {
     event.preventDefault();
+    fadeAll();
     removeSelectedClass();
     $("#popBtn").addClass("selected");
-    hideAll();
-    $("#pop").show();
+    $("#pop").fadeIn();
   });
   $("#punkBtn").click(function(event) {
     event.preventDefault();
+    fadeAll();
     removeSelectedClass();
     $("#punkBtn").addClass("selected");
-    hideAll();
-    $("#punk").show();
+    $("#punk").fadeIn();
   });
   $("#rockBtn").click(function(event) {
     event.preventDefault();
+    fadeAll();
     removeSelectedClass();
     $("#rockBtn").addClass("selected");
-    hideAll();
-    $("#rock").show();
+    $("#rock").fadeIn();
   });
 });
