@@ -282,3 +282,9 @@ body:hover span {
   color: rgba(255, 255, 255, 1);
   border-radius: 10px;
 }
+h2 {
+  letter-spacing: -6px;
+}
+#home p {
+  max-width: 550px;
+}

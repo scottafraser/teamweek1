@@ -91,14 +91,14 @@ function makeAudio(x) {
   return splitPic;
 }
 
-function fadeAll(t) {
-  $("#home").fadeOut(t)
-  $("#metal").fadeOut(t)
-  $("#jazz").fadeOut(t)
-  $("#blues").fadeOut(t)
-  $("#pop").fadeOut(t)
-  $("#punk").fadeOut(t)
-  $("#rock").fadeOut(t)
+function hideAll() {
+  $("#home").hide()
+  $("#metal").hide()
+  $("#jazz").hide()
+  $("#blues").hide()
+  $("#pop").hide()
+  $("#punk").hide()
+  $("#rock").hide()
 }
 
 function removeSelectedClass() {
@@ -194,44 +194,44 @@ $(document).ready(function() {
   // nav function
   $("#metalBtn").click(function(event) {
     event.preventDefault();
-    fadeAll(200);
+    hideAll();
     removeSelectedClass();
     $("#metalBtn").addClass("selected");
-    $("#metal, #generator").fadeIn(200);
+    $("#metal, #generator").show();
   });
   $("#jazzBtn").click(function(event) {
     event.preventDefault();
-    fadeAll(200);
+    hideAll();
     removeSelectedClass();
     $("#jazzBtn").addClass("selected");
-    $("#jazz, #generator").fadeIn(200);
+    $("#jazz, #generator").show();
   });
   $("#bluesBtn").click(function(event) {
     event.preventDefault();
-    fadeAll(200);
+    hideAll();
     removeSelectedClass();
     $("#bluesBtn").addClass("selected");
-    $("#blues, #generator").fadeIn(200);
+    $("#blues, #generator").show();
   });
   $("#popBtn").click(function(event) {
     event.preventDefault();
-    fadeAll(200);
+    hideAll();
     removeSelectedClass();
     $("#popBtn").addClass("selected");
-    $("#pop, #generator").fadeIn(200);
+    $("#pop, #generator").show();
   });
   $("#punkBtn").click(function(event) {
     event.preventDefault();
-    fadeAll(200);
+    hideAll();
     removeSelectedClass();
     $("#punkBtn").addClass("selected");
-    $("#punk, #generator").fadeIn(200);
+    $("#punk, #generator").show();
   });
   $("#rockBtn").click(function(event) {
     event.preventDefault();
-    fadeAll(200);
+    hideAll();
     removeSelectedClass();
     $("#rockBtn").addClass("selected");
-    $("#rock, #generator").fadeIn(200);
+    $("#rock, #generator").show();
   });
 });
