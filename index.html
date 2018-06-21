@@ -1,181 +1,181 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link href="img/guitar.png" rel="icon" sizes="24x24" type="image/png">
-  <link href="https://fonts.googleapis.com/css?family=Cardo|Caveat:700|Chau+Philomene+One|IM+Fell+DW+Pica|Passion+One|Oswald:500|Rokkitt" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <script src="js/jquery-3.3.1.js" type="text/javascript">
-  </script>
-  <script src="js/bootstrap.js" type="text/javascript">
-  </script>
-  <script src="js/scripts.js" type="text/javascript">
-  </script>
-  <title>Music</title>
-</head>
-<body>
-  <div class="container-fluid">
-    <!-- <h1 id='head'>Step into the world of music...</h1> -->
-    <div id='genres'>
-      <div class="row">
-        <div class="col-sm-2">
-          <h4 id="bluesBtn">BLUES</h4>
-        </div>
-        <div class="col-sm-2">
-          <h4 id="jazzBtn">JAZZ</h4>
-        </div>
-        <div class="col-sm-2">
-          <h4 id="rockBtn">ROCK</h4>
-        </div>
-        <div class="col-sm-2">
-          <h4 id="popBtn">POP</h4>
-        </div>
-        <div class="col-sm-2">
-          <h4 id="punkBtn">PUNK</h4>
-        </div>
-        <div class="col-sm-2">
-          <h4 id="metalBtn">METAL</h4>
+  <head>
+    <meta charset="utf-8">
+    <link href="img/guitar.png" rel="icon" sizes="24x24" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Caveat:700|Chau+Philomene+One|IM+Fell+DW+Pica|Passion+One|Oswald:500|Rokkitt" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Music</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- <h1 id='head'>Step into the world of music...</h1> -->
+      <div id='genres'>
+        <div class="row">
+          <div class="col-sm-2">
+            <h4 id="bluesBtn">BLUES</h4>
+          </div>
+          <div class="col-sm-2">
+            <h4 id="jazzBtn">JAZZ</h4>
+          </div>
+          <div class="col-sm-2">
+            <h4 id="rockBtn">ROCK</h4>
+          </div>
+          <div class="col-sm-2">
+            <h4 id="popBtn">POP</h4>
+          </div>
+          <div class="col-sm-2">
+            <h4 id="punkBtn">PUNK</h4>
+          </div>
+          <div class="col-sm-2">
+            <h4 id="metalBtn">METAL</h4>
+          </div>
         </div>
       </div>
-    </div><!-- <div class="row">
-      <h1 id="showChords">Chords</h1>
-    </div> -->
-  </div>
-  <div class="container-fluid" id="mainInfo">
-    <div id="home">
-      <div class="container-fluid row card home">
-        <div class="col-md-8">
-          <h2><span>M</span> <span>U</span> <span>S</span> <span>I</span> <span>C</span> <span>A</span> <span>L</span> <span>I</span> <span>T</span> <span>Y</span></h2>
-          <h3>Chord Progression</h3>
-          <p>While music is an expression of art and emotion, the bulk of western music is performed on the same scale. Most of the music we enjoy can be broken down into the same 12 notes. Different genres have different feels and expressions based entirely on how intervals and scales are utilized. a blues song might share the same key and scale as a pop song, but that's where the similarities will end because each approaches the intervals between notes and unfolds in a completely different way.</p>
+      <!-- <div class="row">
+        <h1 id="showChords">Chords</h1>
+        </div> -->
+    </div>
+    <div class="container-fluid" id="mainInfo">
+      <div id="home">
+        <div class="container-fluid row card home">
+          <div class="col-md-8">
+            <h2><span>M</span> <span>U</span> <span>S</span> <span>I</span> <span>C</span> <span>A</span> <span>L</span> <span>I</span> <span>T</span> <span>Y</span></h2>
+            <h3>Chord Progression</h3>
+            <p>While music is an expression of art and emotion, the bulk of western music is performed on the same scale. Most of the music we enjoy can be broken down into the same 12 notes. Different genres have different feels and expressions based entirely on how intervals and scales are utilized. a blues song might share the same key and scale as a pop song, but that's where the similarities will end because each approaches the intervals between notes and unfolds in a completely different way.</p>
+          </div>
+        </div>
+      </div>
+      <div id="jazz">
+        <div class="container-fluid row card jazz">
+          <div class="col-md-4">
+            <h2>Jazz</h2>
+            <h3>Jazz Chord Progression</h3>
+            <p>Jazz is a music genre that originated in the African-American communities of New Orleans, United States, in the late 19th and early 20th centuries, and developed from roots in blues and ragtime. While blues can be defined by standard I-IV-V progression, Jazz incorporates a "swing" that involves alternately lengthening and shortening the pulse-divisions in a rhythm. Unlike the blues, jazz doesn't always follow a blues form, the chord progression can be completely different from the I-IV-V progression depending on the improvisation of the performer.</p>
+          </div>
+          <div class="col-md-8 info display" id="jazzChords"></div>
+        </div>
+      </div>
+      <div id="blues">
+        <div class="container-fluid row card blues">
+          <div class="col-md-4">
+            <h2>The Blues</h2>
+            <h3>12 Bar Blues Progression</h3>
+            <p>Blues is a music genre and musical form originated by African Americans in the Deep South of the United States around the end of the 19th century. The genre developed from roots in African musical traditions, African-American work songs, spirituals, and the folk music of white Americans of European heritage. Blues incorporated spirituals, work songs, field hollers, shouts, chants, and rhymed simple narrative ballads.</p>
+            <p>In melody, blues is often distinguished by the use of the flattened third, fifth and seventh of the associated major scale</p>
+          </div>
+          <div class="col-md-8 info display" id="bluesChords"></div>
+        </div>
+      </div>
+      <div id="pop">
+        <div class="container-fluid row card pop">
+          <div class="col-md-4 icon">
+            <h2>POP MUSIC</h2>
+            <h3>*generic 4 chord progression*</h3>
+            <p>Pop music is eclectic, and often borrows elements from other styles such as urban, dance, rock, Latin, and country; nonetheless, there are core elements that define pop music. Identifying factors include generally short to medium-length songs written in a basic format (often the verse-chorus structure), as well as common use of repeated choruses, melodic tunes, and hooks.</p>
+          </div>
+          <div class="col-md-8 info display" id="popChords"></div>
+        </div>
+      </div>
+      <div id="punk">
+        <div class="container-fluid row card punk">
+          <div class="col-md-4 icon">
+            <h2>Punk.</h2>
+            <h3>The Evolution of Punk</h3>
+          </div>
+          <div class="col-md-8 info display"></div>
+        </div>
+      </div>
+      <div id="metal">
+        <div class="container-fluid row card metal">
+          <div class="col-md-4">
+            <h2>Metal</h2>
+            <h3>Metal Chord Progression</h3>
+            <p>Heavy metal (or simply metal) is a genre of rock music that developed in the late 1960s and early 1970s, largely in the United Kingdom. Metal tended to focus more on minor scales for a darker, foreboding sound and eschewed most of rock's blues influence in favor of amplified distortion, extended guitar solos, emphatic beats and overall loudness.</p>
+          </div>
+          <div class="col-md-8 info display" id="metalChords"></div>
+        </div>
+      </div>
+      <div id="rock">
+        <div class="container-fluid row card rock">
+          <div class="col-md-4">
+            <h2>Rock</h2>
+            <h3>Rock Chord Progression</h3>
+            <p>Rock music is a broad genre of popular music that originated in the United States in the early 1950s, and developed into a range of different styles in the 1960s and later. It has its roots in 1940s and 1950s rock and roll, a style which drew heavily on the African-American genres of blues and rhythm and blues, and from country music. Typically, rock is song-based music usually with a progression similar to blues often with I-IV-V progression in a 4/4 time signature using a verse–chorus form, but the genre has become extremely diverse.</p>
+          </div>
+          <div class="col-md-8 info display" id="rockChords"></div>
+        </div>
+      </div>
+      <div id="generator">
+        <div class="center">
+          <div class="row form container-fluid">
+            <h1>GUITAR CHORD PROGRESSION GENERATOR</h1>
+            <form action="index.html" id="theForm" method="post" name="theForm">
+              <!-- <div class="col-md-6"></div> -->
+              <div class="col-md-4 formbutton">
+                <h3>Select Key:</h3>
+                <select class="form-control" id="key">
+                  <option value="keyC">
+                    C
+                  </option>
+                  <option value="keyDb">
+                    Db
+                  </option>
+                  <option value="keyD">
+                    D
+                  </option>
+                  <option value="keyEb">
+                    Eb
+                  </option>
+                  <option value="keyE">
+                    E
+                  </option>
+                  <option value="keyF">
+                    F
+                  </option>
+                  <option value="keyFsharp">
+                    F#
+                  </option>
+                  <option value="keyG">
+                    G
+                  </option>
+                  <option value="keyA">
+                    A
+                  </option>
+                  <option value="keyAb">
+                    Ab
+                  </option>
+                  <option value="keyBb">
+                    Bb
+                  </option>
+                  <option value="keyB">
+                    B
+                  </option>
+                </select>
+              </div>
+              <div class="col-md-4 formbutton">
+                <h3>Select Scale:</h3>
+                <select class="form-control dropdown" id="major">
+                  <option>
+                    Major
+                  </option>
+                  <option>
+                    Minor
+                  </option>
+                </select>
+              </div>
+              <div class="col-md-4 formbutton">
+                <button class="btn btn-default btn-md" id="chordButton" name="button" type="submit">Generate Chords</button>
+              </div>
+              <!-- <div class="col-md-3"></div> -->
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <div id="jazz">
-      <div class="container-fluid row card jazz">
-        <div class="col-md-4">
-          <h2>Jazz</h2>
-          <h3>Jazz Chord Progression</h3>
-          <p>Jazz is a music genre that originated in the African-American communities of New Orleans, United States, in the late 19th and early 20th centuries, and developed from roots in blues and ragtime. While blues can be defined by standard I-IV-V progression, Jazz incorporates a "swing" that involves alternately lengthening and shortening the pulse-divisions in a rhythm. Unlike the blues, jazz doesn't always follow a blues form, the chord progression can be completely different from the I-IV-V progression depending on the improvisation of the performer.</p>
-        </div>
-        <div class="col-md-8 info display" id="jazzChords"></div>
-      </div>
-    </div>
-    <div id="blues">
-      <div class="container-fluid row card blues">
-        <div class="col-md-4">
-          <h2>The Blues</h2>
-          <h3>12 Bar Blues Progression</h3>
-          <p>Blues is a music genre and musical form originated by African Americans in the Deep South of the United States around the end of the 19th century. The genre developed from roots in African musical traditions, African-American work songs, spirituals, and the folk music of white Americans of European heritage. Blues incorporated spirituals, work songs, field hollers, shouts, chants, and rhymed simple narrative ballads.</p>
-          <p>In melody, blues is often distinguished by the use of the flattened third, fifth and seventh of the associated major scale</p>
-        </div>
-        <div class="col-md-8 info display" id="bluesChords"></div>
-      </div>
-    </div>
-    <div id="pop">
-      <div class="container-fluid row card pop">
-        <div class="col-md-4 icon">
-          <h2>POP MUSIC</h2>
-          <h3>*generic 4 chord progression*</h3>
-          <p>Pop music is eclectic, and often borrows elements from other styles such as urban, dance, rock, Latin, and country; nonetheless, there are core elements that define pop music. Identifying factors include generally short to medium-length songs written in a basic format (often the verse-chorus structure), as well as common use of repeated choruses, melodic tunes, and hooks.</p>
-        </div>
-        <div class="col-md-8 info display" id="popChords"></div>
-      </div>
-    </div>
-    <div id="punk">
-      <div class="container-fluid row card punk">
-        <div class="col-md-4 icon">
-          <h2>Punk.</h2>
-          <h3>The Evolution of Punk</h3>
-          
-        </div>
-        <div class="col-md-8 info display"></div>
-      </div>
-    </div>
-    <div id="metal">
-      <div class="container-fluid row card metal">
-        <div class="col-md-4">
-          <h2>Metal</h2>
-          <h3>Metal Chord Progression</h3>
-          <p>Heavy metal (or simply metal) is a genre of rock music that developed in the late 1960s and early 1970s, largely in the United Kingdom. Metal tended to focus more on minor scales for a darker, foreboding sound and eschewed most of rock's blues influence in favor of amplified distortion, extended guitar solos, emphatic beats and overall loudness.</p>
-        </div>
-        <div class="col-md-8 info display" id="metalChords"></div>
-      </div>
-    </div>
-    <div id="rock">
-      <div class="container-fluid row card rock">
-        <div class="col-md-4">
-          <h2>Rock</h2>
-          <h3>Rock Chord Progression</h3>
-          <p>Rock music is a broad genre of popular music that originated in the United States in the early 1950s, and developed into a range of different styles in the 1960s and later. It has its roots in 1940s and 1950s rock and roll, a style which drew heavily on the African-American genres of blues and rhythm and blues, and from country music. Typically, rock is song-based music usually with a progression similar to blues often with I-IV-V progression in a 4/4 time signature using a verse–chorus form, but the genre has become extremely diverse.</p>
-        </div>
-        <div class="col-md-8 info display" id="rockChords"></div>
-      </div>
-    </div>
-    <div id="generator">
-      <div class="center">
-        <div class="row form container-fluid">
-          <h1>GUITAR CHORD PROGRESSION GENERATOR</h1>
-          <form action="index.html" id="theForm" method="post" name="theForm">
-            <!-- <div class="col-md-6"></div> -->
-            <div class="col-md-4 formbutton">
-              <h3>Select Key:</h3><select class="form-control" id="key">
-                <option value="keyC">
-                  C
-                </option>
-                <option value="keyDb">
-                  Db
-                </option>
-                <option value="keyD">
-                  D
-                </option>
-                <option value="keyEb">
-                  Eb
-                </option>
-                <option value="keyE">
-                  E
-                </option>
-                <option value="keyF">
-                  F
-                </option>
-                <option value="keyFsharp">
-                  F#
-                </option>
-                <option value="keyG">
-                  G
-                </option>
-                <option value="keyA">
-                  A
-                </option>
-                <option value="keyAb">
-                  Ab
-                </option>
-                <option value="keyBb">
-                  Bb
-                </option>
-                <option value="keyB">
-                  B
-                </option>
-              </select>
-            </div>
-            <div class="col-md-4 formbutton">
-              <h3>Select Scale:</h3><select class="form-control dropdown" id="major">
-                <option>
-                  Major
-                </option>
-                <option>
-                  Minor
-                </option>
-              </select>
-            </div>
-            <div class="col-md-4 formbutton">
-              <button class="btn btn-default btn-md" id="chordButton" name="button" type="submit">Generate Chords</button>
-            </div><!-- <div class="col-md-3"></div> -->
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

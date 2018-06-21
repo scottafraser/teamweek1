@@ -1,300 +1,271 @@
-/*font-family: 'IM Fell DW Pica', serif;
- font-family: 'Chau Philomene One', sans-serif;
- font-family: 'Rokkitt', serif;
-*/
-
-/** {
-     border: solid 1px pink;
-}
-*/
-
 body {
-  /*background: linear-gradient(to top, #463b59, #373338);
-    */
-  background: linear-gradient(to top, #200526, #1d0023);
-  /*background: #200526;
-    */
+	background: linear-gradient(to top, #200526, #1d0023)
 }
 p {
-  font-size: 18px;
-  line-height: 23px;
-  font-family: sans-serif;
-  letter-spacing: 1px;
-  font-weight: lighter;
+	font-size: 18px;
+	line-height: 23px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-weight: lighter;
 }
 H1 {
-  color: white;
-  letter-spacing: 3PX;
-  font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+	letter-spacing: 3PX;
+	font-family: 'Oswald', sans-serif
 }
 .center {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  margin-top: -50px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	margin-top: -50px
 }
 h3 {
-  letter-spacing: 1px;
+	letter-spacing: 1px
 }
-/*Makes form area smaller, but does not account for form titles*/
-
 .form-control {
-  width: 50%;
+	width: 50%
 }
 .btn-md {
-  font-family: sans-serif;
-  background-color: #320038;
-  color: rgba(255, 255, 255, .85);
-  letter-spacing: 1px;
-  font-size: 15px;
-  transition: .5s;
-  margin-top: 56px;
-  border-radius: 10px;
+	font-family: sans-serif;
+	background-color: #320038;
+	color: rgba(255, 255, 255, .85);
+	letter-spacing: 1px;
+	font-size: 15px;
+	transition: .5s;
+	margin-top: 56px;
+	border-radius: 10px
 }
-.btn-md:hover {
-  /*background-color: inherit;
-    */
-  background-color: #200526;
-  color: rgba(255, 255, 255, 1);
-  transition: .75s;
-  cursor: pointer;
-  border-radius: 10px;
+.btn-md: hover {
+	background-color: #200526;
+	color: rgba(255, 255, 255, 1);
+	transition: .75s;
+	cursor: pointer;
+	border-radius: 10px
 }
 .col-md-4 {
-  padding-left: 20px;
-  padding-right: 20px;
+	padding-left: 20px;
+	padding-right: 20px
 }
 #chordbutton {
-  margin-top: 20px;
+	margin-top: 20px
 }
 .formbutton {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column
 }
 .form {
-  height: auto;
-  display: flex;
-  width: auto;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 50%;
-  color: white;
-  box-shadow: 15px 15px 70px rgba(10, 10, 10, .35);
-  padding-bottom: 20px;
-  background-color: #320038;
-  border-radius: 10px;
+	height: auto;
+	display: flex;
+	width: auto;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 50%;
+	color: #FFFFFF;
+	box-shadow: 15px 15px 70px rgba(10, 10, 10, .35);
+	padding-bottom: 20px;
+	background-color: #320038;
+	border-radius: 10px
 }
 .form h1 {
-  text-align: center;
+	text-align: center
 }
-.left {}
+.left {
+}
 .input {
-  height: auto;
+	height: auto
 }
 .card {
-  color: white;
-  height: 700px;
-  border-radius: 10px;
-  box-shadow: 15px 15px 70px rgba(10, 10, 10, .5);
+	color: #FFFFFF;
+	height: 700px;
+	border-radius: 10px;
+	box-shadow: 15px 15px 70px rgba(10, 10, 10, .5)
 }
 .home {
-  background-image: url('../img/music.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #320038;
+	background-image: url('../img/music.jpg');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #320038
 }
 .home h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 100px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px
 }
 .jazz {
-  background-image: url('../img/jazz.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #320038;
+	background-image: url('../img/jazz.jpg');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #320038
 }
 .jazz h2 {
-  font-family: 'Caveat', cursive;
-  font-size: 180px;
+	font-family: 'Caveat', cursive;
+	font-size: 180px
 }
 .blues {
-  background-image: url('../img/blues.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #320038;
+	background-image: url('../img/blues.jpg');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #320038
 }
 .blues h2 {
-  font-family: 'Caveat', cursive;
-  font-size: 140px;
+	font-family: 'Caveat', cursive;
+	font-size: 140px
 }
 .pop {
-  background-image: url('../img/pop.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #320038;
+	background-image: url('../img/pop.jpg');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #320038
 }
 .pop h2 {
-  font-family: 'Passion One', cursive;
-  font-size: 100px;
-  letter-spacing: 4px;
+	font-family: 'Passion One', cursive;
+	font-size: 100px;
+	letter-spacing: 4px
 }
 .punk {
-  background-image: url('../img/punk.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #320038;
+	background-image: url('../img/punk.jpg');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #320038
 }
 .punk h2 {
-  font-family: 'IM Fell DW Pica', serif;
-  font-size: 180px;
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 180px
 }
 .metal {
-  background-image: url('../img/metal.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #320038;
+	background-image: url('../img/metal.jpg');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #320038
 }
 .metal h2 {
-  font-family: 'IM Fell DW Pica', serif;
-  font-size: 180px;
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 180px
 }
 .rock {
-  background-image: url('../img/rock.jpg');
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #320038;
+	background-image: url('../img/rock.jpg');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #320038
 }
 .rock h2 {
-  font-family: 'IM Fell DW Pica', serif;
-  font-size: 180px;
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 180px
 }
 .container-fluid {
-  margin: 30px;
+	margin: 30px
 }
 #jazz, #blues, #pop, #punk, #metal, #rock {
-  margin-bottom: 100px;
-  display: none;
+	margin-bottom: 100px;
+	display: none
 }
-
 #home {
-  margin-bottom: 100px;
+	margin-bottom: 100px
 }
-
 .col-md-8 audio {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-around
 }
-
 .col-md-8 {
-  padding: 20px;
-
+	padding: 20px
 }
 .col-md-8 img {
-  float: left;
-  width: 25%;
+	float: left;
+	width: 25%
 }
 #genres {
-  height: 75px;
-  width: auto;
+	height: 75px;
+	width: auto
 }
 #generator {
-  display: none;
+	display: none
 }
 h4 {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  font-family: sans-serif;
-  color: rgba(255, 255, 255, 0.4);
-  letter-spacing: 3px;
-  font-size: 20px;
-  transition: .5s;
-  border-bottom-style: none;
-  padding: 7px;
-  margin-top: 20px;
-  border-bottom-width: 0px;
-  border-radius: 10px;
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	font-family: sans-serif;
+	color: rgba(255, 255, 255, 0.4);
+	letter-spacing: 3px;
+	font-size: 20px;
+	transition: .5s;
+	border-bottom-style: none;
+	padding: 7px;
+	margin-top: 20px;
+	border-bottom-width: 0px;
+	border-radius: 10px
 }
 h4:hover {
-  color: rgba(255, 255, 255, 1);
-  transition: .75s;
-  cursor: pointer;
-  padding: 7px;
-  background-color: rgba(255, 255, 255, .025);
-  border-radius: 10px;
+	color: rgba(255, 255, 255, 1);
+	transition: .75s;
+	cursor: pointer;
+	padding: 7px;
+	background-color: rgba(255, 255, 255, .025);
+	border-radius: 10px
 }
 .selected {
-  color: rgba(255, 255, 255, 1);
-  border-bottom-style: outset;
-  border-bottom-width: 1px;
-  padding-bottom: 7px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, .05);
+	color: rgba(255, 255, 255, 1);
+	border-bottom-style: outset;
+	border-bottom-width: 1px;
+	padding-bottom: 7px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, .05)
 }
 .display {
-  color: transparent;
-  font-size: 0;
+	color: transparent;
+	font-size: 0
 }
-/*#head {
-     margin-bottom: 100px;
-     font-family: sans-serif;
-     color: rgba(255, 255, 255, 0.6);
-     text-align: center;
-}
-*/
-
 .col-md-8 span {
-  opacity: 0;
-  transition: opacity 1300ms
+	opacity: 0;
+	transition: opacity 1300ms
 }
 .col-md-8 span:nth-child(1) {
-  transition-delay: 200ms
+	transition-delay: 200ms
 }
 .col-md-8 span:nth-child(2) {
-  transition-delay: 1200ms
+	transition-delay: 1200ms
 }
 .col-md-8 span:nth-child(3) {
-  transition-delay: 800ms
+	transition-delay: 800ms
 }
 .col-md-8 span:nth-child(4) {
-  transition-delay: 300ms
+	transition-delay: 300ms
 }
 .col-md-8 span:nth-child(5) {
-  transition-delay: 700ms
+	transition-delay: 700ms
 }
 .col-md-8 span:nth-child(6) {
-  transition-delay: 600ms
+	transition-delay: 600ms
 }
 .col-md-8 span:nth-child(7) {
-  transition-delay: 400ms
+	transition-delay: 400ms
 }
 .col-md-8 span:nth-child(8) {
-  transition-delay: 900ms
+	transition-delay: 900ms
 }
 .col-md-8 span:nth-child(9) {
-  transition-delay: 700ms
+	transition-delay: 700ms
 }
 .col-md-8 span:nth-child(10) {
-  transition-delay: 50ms
+	transition-delay: 50ms
 }
 body:hover span {
-  opacity: 1;
+	opacity: 1
 }
-.btn-md:active {
-  background-color: #200526;
-  color: rgba(255, 255, 255, 1);
-  border-radius: 10px;
+.btn-md: active {
+	background-color: #200526;
+	color: rgba(255, 255, 255, 1);
+	border-radius: 10px
 }
 h2 {
-  letter-spacing: -6px;
+	letter-spacing: -6px
 }
 #home p {
-  max-width: 550px;
+	max-width: 550px
 }
